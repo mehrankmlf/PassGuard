@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4566A07F2A7E6837001EB39C /* PassGuard.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4566A07E2A7E6837001EB39C /* PassGuard.docc */; };
+		4566A0852A7E6838001EB39C /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566A07A2A7E6837001EB39C /* PassGuard.framework */; };
+		4566A08A2A7E6838001EB39C /* PassGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0892A7E6838001EB39C /* PassGuardTests.swift */; };
+		4566A08B2A7E6838001EB39C /* PassGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4566A07D2A7E6837001EB39C /* PassGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4566A09D2A7E68FA001EB39C /* UniqueCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0962A7E68F9001EB39C /* UniqueCharacterRule.swift */; };
+		4566A09E2A7E68FA001EB39C /* ContainsLowerase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0972A7E68F9001EB39C /* ContainsLowerase.swift */; };
+		4566A09F2A7E68FA001EB39C /* MiddleNumberOrSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0982A7E68F9001EB39C /* MiddleNumberOrSymbol.swift */; };
+		4566A0A02A7E68FA001EB39C /* LenghtMeterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0992A7E68FA001EB39C /* LenghtMeterRule.swift */; };
+		4566A0A12A7E68FA001EB39C /* ContainsNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A09A2A7E68FA001EB39C /* ContainsNumbers.swift */; };
+		4566A0A22A7E68FA001EB39C /* ContainsUppercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A09B2A7E68FA001EB39C /* ContainsUppercase.swift */; };
+		4566A0A32A7E68FA001EB39C /* ContainsSpecialKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A09C2A7E68FA001EB39C /* ContainsSpecialKeywords.swift */; };
+		4566A0AD2A7E690B001EB39C /* NumberOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0A42A7E690B001EB39C /* NumberOnly.swift */; };
+		4566A0AE2A7E690B001EB39C /* LetterOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0A52A7E690B001EB39C /* LetterOnly.swift */; };
+		4566A0AF2A7E690B001EB39C /* SequentialNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0A62A7E690B001EB39C /* SequentialNumber.swift */; };
+		4566A0B02A7E690B001EB39C /* RepeatCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0A72A7E690B001EB39C /* RepeatCharacters.swift */; };
+		4566A0B12A7E690B001EB39C /* SequentialSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0A82A7E690B001EB39C /* SequentialSymbol.swift */; };
+		4566A0B22A7E690B001EB39C /* ConsecutiveLowercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0A92A7E690B001EB39C /* ConsecutiveLowercase.swift */; };
+		4566A0B32A7E690B001EB39C /* CosecutiveNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0AA2A7E690B001EB39C /* CosecutiveNumbers.swift */; };
+		4566A0B42A7E690B001EB39C /* SequentialLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0AB2A7E690B001EB39C /* SequentialLetter.swift */; };
+		4566A0B52A7E690B001EB39C /* ConsecutiveUppercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0AC2A7E690B001EB39C /* ConsecutiveUppercase.swift */; };
+		4566A0C02A7E692D001EB39C /* Manageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B72A7E692D001EB39C /* Manageable.swift */; };
+		4566A0C12A7E692D001EB39C /* GuardianParsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B82A7E692D001EB39C /* GuardianParsType.swift */; };
+		4566A0C22A7E692D001EB39C /* GuardianPars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B92A7E692D001EB39C /* GuardianPars.swift */; };
+		4566A0C32A7E692D001EB39C /* AdditionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BA2A7E692D001EB39C /* AdditionsManager.swift */; };
+		4566A0C42A7E692D001EB39C /* UITextfield + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */; };
+		4566A0C52A7E692D001EB39C /* Calculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BC2A7E692D001EB39C /* Calculatable.swift */; };
+		4566A0C62A7E692D001EB39C /* DeductionsManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */; };
+		4566A0C72A7E692D001EB39C /* RulesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BE2A7E692D001EB39C /* RulesManager.swift */; };
+		4566A0C82A7E692D001EB39C /* EnvironmentRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4566A0862A7E6838001EB39C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4566A0712A7E6837001EB39C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4566A0792A7E6837001EB39C;
+			remoteInfo = PassGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4566A07A2A7E6837001EB39C /* PassGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PassGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4566A07D2A7E6837001EB39C /* PassGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassGuard.h; sourceTree = "<group>"; };
+		4566A07E2A7E6837001EB39C /* PassGuard.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PassGuard.docc; sourceTree = "<group>"; };
+		4566A0842A7E6838001EB39C /* PassGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4566A0892A7E6838001EB39C /* PassGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGuardTests.swift; sourceTree = "<group>"; };
+		4566A0962A7E68F9001EB39C /* UniqueCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueCharacterRule.swift; sourceTree = "<group>"; };
+		4566A0972A7E68F9001EB39C /* ContainsLowerase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsLowerase.swift; sourceTree = "<group>"; };
+		4566A0982A7E68F9001EB39C /* MiddleNumberOrSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleNumberOrSymbol.swift; sourceTree = "<group>"; };
+		4566A0992A7E68FA001EB39C /* LenghtMeterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LenghtMeterRule.swift; sourceTree = "<group>"; };
+		4566A09A2A7E68FA001EB39C /* ContainsNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsNumbers.swift; sourceTree = "<group>"; };
+		4566A09B2A7E68FA001EB39C /* ContainsUppercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsUppercase.swift; sourceTree = "<group>"; };
+		4566A09C2A7E68FA001EB39C /* ContainsSpecialKeywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsSpecialKeywords.swift; sourceTree = "<group>"; };
+		4566A0A42A7E690B001EB39C /* NumberOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOnly.swift; sourceTree = "<group>"; };
+		4566A0A52A7E690B001EB39C /* LetterOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterOnly.swift; sourceTree = "<group>"; };
+		4566A0A62A7E690B001EB39C /* SequentialNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialNumber.swift; sourceTree = "<group>"; };
+		4566A0A72A7E690B001EB39C /* RepeatCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatCharacters.swift; sourceTree = "<group>"; };
+		4566A0A82A7E690B001EB39C /* SequentialSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialSymbol.swift; sourceTree = "<group>"; };
+		4566A0A92A7E690B001EB39C /* ConsecutiveLowercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveLowercase.swift; sourceTree = "<group>"; };
+		4566A0AA2A7E690B001EB39C /* CosecutiveNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosecutiveNumbers.swift; sourceTree = "<group>"; };
+		4566A0AB2A7E690B001EB39C /* SequentialLetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialLetter.swift; sourceTree = "<group>"; };
+		4566A0AC2A7E690B001EB39C /* ConsecutiveUppercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveUppercase.swift; sourceTree = "<group>"; };
+		4566A0B72A7E692D001EB39C /* Manageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manageable.swift; sourceTree = "<group>"; };
+		4566A0B82A7E692D001EB39C /* GuardianParsType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianParsType.swift; sourceTree = "<group>"; };
+		4566A0B92A7E692D001EB39C /* GuardianPars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianPars.swift; sourceTree = "<group>"; };
+		4566A0BA2A7E692D001EB39C /* AdditionsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionsManager.swift; sourceTree = "<group>"; };
+		4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextfield + Extension.swift"; sourceTree = "<group>"; };
+		4566A0BC2A7E692D001EB39C /* Calculatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculatable.swift; sourceTree = "<group>"; };
+		4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeductionsManagers.swift; sourceTree = "<group>"; };
+		4566A0BE2A7E692D001EB39C /* RulesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesManager.swift; sourceTree = "<group>"; };
+		4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentRules.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4566A0772A7E6837001EB39C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4566A0812A7E6838001EB39C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4566A0852A7E6838001EB39C /* PassGuard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4566A0702A7E6837001EB39C = {
+			isa = PBXGroup;
+			children = (
+				4566A07C2A7E6837001EB39C /* PassGuard */,
+				4566A0882A7E6838001EB39C /* PassGuardTests */,
+				4566A07B2A7E6837001EB39C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4566A07B2A7E6837001EB39C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4566A07A2A7E6837001EB39C /* PassGuard.framework */,
+				4566A0842A7E6838001EB39C /* PassGuardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4566A07C2A7E6837001EB39C /* PassGuard */ = {
+			isa = PBXGroup;
+			children = (
+				4566A0B62A7E6923001EB39C /* Source */,
+				4566A0942A7E68D7001EB39C /* AdditionsManager */,
+				4566A0952A7E68DC001EB39C /* DeductionsManager */,
+				4566A07D2A7E6837001EB39C /* PassGuard.h */,
+				4566A07E2A7E6837001EB39C /* PassGuard.docc */,
+			);
+			path = PassGuard;
+			sourceTree = "<group>";
+		};
+		4566A0882A7E6838001EB39C /* PassGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				4566A0892A7E6838001EB39C /* PassGuardTests.swift */,
+			);
+			path = PassGuardTests;
+			sourceTree = "<group>";
+		};
+		4566A0942A7E68D7001EB39C /* AdditionsManager */ = {
+			isa = PBXGroup;
+			children = (
+				4566A0972A7E68F9001EB39C /* ContainsLowerase.swift */,
+				4566A09A2A7E68FA001EB39C /* ContainsNumbers.swift */,
+				4566A09C2A7E68FA001EB39C /* ContainsSpecialKeywords.swift */,
+				4566A09B2A7E68FA001EB39C /* ContainsUppercase.swift */,
+				4566A0992A7E68FA001EB39C /* LenghtMeterRule.swift */,
+				4566A0982A7E68F9001EB39C /* MiddleNumberOrSymbol.swift */,
+				4566A0962A7E68F9001EB39C /* UniqueCharacterRule.swift */,
+			);
+			path = AdditionsManager;
+			sourceTree = "<group>";
+		};
+		4566A0952A7E68DC001EB39C /* DeductionsManager */ = {
+			isa = PBXGroup;
+			children = (
+				4566A0A92A7E690B001EB39C /* ConsecutiveLowercase.swift */,
+				4566A0AC2A7E690B001EB39C /* ConsecutiveUppercase.swift */,
+				4566A0AA2A7E690B001EB39C /* CosecutiveNumbers.swift */,
+				4566A0A52A7E690B001EB39C /* LetterOnly.swift */,
+				4566A0A42A7E690B001EB39C /* NumberOnly.swift */,
+				4566A0A72A7E690B001EB39C /* RepeatCharacters.swift */,
+				4566A0AB2A7E690B001EB39C /* SequentialLetter.swift */,
+				4566A0A62A7E690B001EB39C /* SequentialNumber.swift */,
+				4566A0A82A7E690B001EB39C /* SequentialSymbol.swift */,
+			);
+			path = DeductionsManager;
+			sourceTree = "<group>";
+		};
+		4566A0B62A7E6923001EB39C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4566A0BA2A7E692D001EB39C /* AdditionsManager.swift */,
+				4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */,
+				4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */,
+				4566A0BC2A7E692D001EB39C /* Calculatable.swift */,
+				4566A0B72A7E692D001EB39C /* Manageable.swift */,
+				4566A0B92A7E692D001EB39C /* GuardianPars.swift */,
+				4566A0B82A7E692D001EB39C /* GuardianParsType.swift */,
+				4566A0BE2A7E692D001EB39C /* RulesManager.swift */,
+				4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4566A0752A7E6837001EB39C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4566A08B2A7E6838001EB39C /* PassGuard.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4566A0792A7E6837001EB39C /* PassGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4566A08E2A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuard" */;
+			buildPhases = (
+				4566A0752A7E6837001EB39C /* Headers */,
+				4566A0762A7E6837001EB39C /* Sources */,
+				4566A0772A7E6837001EB39C /* Frameworks */,
+				4566A0782A7E6837001EB39C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassGuard;
+			productName = PassGuard;
+			productReference = 4566A07A2A7E6837001EB39C /* PassGuard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4566A0832A7E6838001EB39C /* PassGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4566A0912A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuardTests" */;
+			buildPhases = (
+				4566A0802A7E6838001EB39C /* Sources */,
+				4566A0812A7E6838001EB39C /* Frameworks */,
+				4566A0822A7E6838001EB39C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4566A0872A7E6838001EB39C /* PBXTargetDependency */,
+			);
+			name = PassGuardTests;
+			productName = PassGuardTests;
+			productReference = 4566A0842A7E6838001EB39C /* PassGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4566A0712A7E6837001EB39C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4566A0792A7E6837001EB39C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					4566A0832A7E6838001EB39C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 4566A0742A7E6837001EB39C /* Build configuration list for PBXProject "PassGuard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4566A0702A7E6837001EB39C;
+			productRefGroup = 4566A07B2A7E6837001EB39C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4566A0792A7E6837001EB39C /* PassGuard */,
+				4566A0832A7E6838001EB39C /* PassGuardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4566A0782A7E6837001EB39C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4566A0822A7E6838001EB39C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4566A0762A7E6837001EB39C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4566A0A32A7E68FA001EB39C /* ContainsSpecialKeywords.swift in Sources */,
+				4566A0AF2A7E690B001EB39C /* SequentialNumber.swift in Sources */,
+				4566A0C22A7E692D001EB39C /* GuardianPars.swift in Sources */,
+				4566A0C62A7E692D001EB39C /* DeductionsManagers.swift in Sources */,
+				4566A0C42A7E692D001EB39C /* UITextfield + Extension.swift in Sources */,
+				4566A0B32A7E690B001EB39C /* CosecutiveNumbers.swift in Sources */,
+				4566A0B02A7E690B001EB39C /* RepeatCharacters.swift in Sources */,
+				4566A09F2A7E68FA001EB39C /* MiddleNumberOrSymbol.swift in Sources */,
+				4566A0C32A7E692D001EB39C /* AdditionsManager.swift in Sources */,
+				4566A0A12A7E68FA001EB39C /* ContainsNumbers.swift in Sources */,
+				4566A0C02A7E692D001EB39C /* Manageable.swift in Sources */,
+				4566A0AE2A7E690B001EB39C /* LetterOnly.swift in Sources */,
+				4566A0B22A7E690B001EB39C /* ConsecutiveLowercase.swift in Sources */,
+				4566A0B52A7E690B001EB39C /* ConsecutiveUppercase.swift in Sources */,
+				4566A09D2A7E68FA001EB39C /* UniqueCharacterRule.swift in Sources */,
+				4566A09E2A7E68FA001EB39C /* ContainsLowerase.swift in Sources */,
+				4566A07F2A7E6837001EB39C /* PassGuard.docc in Sources */,
+				4566A0AD2A7E690B001EB39C /* NumberOnly.swift in Sources */,
+				4566A0C52A7E692D001EB39C /* Calculatable.swift in Sources */,
+				4566A0B42A7E690B001EB39C /* SequentialLetter.swift in Sources */,
+				4566A0A02A7E68FA001EB39C /* LenghtMeterRule.swift in Sources */,
+				4566A0C72A7E692D001EB39C /* RulesManager.swift in Sources */,
+				4566A0B12A7E690B001EB39C /* SequentialSymbol.swift in Sources */,
+				4566A0C82A7E692D001EB39C /* EnvironmentRules.swift in Sources */,
+				4566A0A22A7E68FA001EB39C /* ContainsUppercase.swift in Sources */,
+				4566A0C12A7E692D001EB39C /* GuardianParsType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4566A0802A7E6838001EB39C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4566A08A2A7E6838001EB39C /* PassGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4566A0872A7E6838001EB39C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4566A0792A7E6837001EB39C /* PassGuard */;
+			targetProxy = 4566A0862A7E6838001EB39C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4566A08C2A7E6838001EB39C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4566A08D2A7E6838001EB39C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4566A08F2A7E6838001EB39C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3KZWVBAJSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.PassGuard;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4566A0902A7E6838001EB39C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3KZWVBAJSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.PassGuard;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4566A0922A7E6838001EB39C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KZWVBAJSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.PassGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4566A0932A7E6838001EB39C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KZWVBAJSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.PassGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4566A0742A7E6837001EB39C /* Build configuration list for PBXProject "PassGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4566A08C2A7E6838001EB39C /* Debug */,
+				4566A08D2A7E6838001EB39C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4566A08E2A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4566A08F2A7E6838001EB39C /* Debug */,
+				4566A0902A7E6838001EB39C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4566A0912A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4566A0922A7E6838001EB39C /* Debug */,
+				4566A0932A7E6838001EB39C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4566A0712A7E6837001EB39C /* Project object */;
+}
