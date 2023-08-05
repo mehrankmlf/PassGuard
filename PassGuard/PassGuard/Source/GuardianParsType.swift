@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum StrenghtType {
+public enum StrenghtType {
     case veryWeak
     case weak
     case medium

@@ -8,7 +8,7 @@
 import Foundation
 
 open class DeductionsManager: Calculatable {
-    func scoreCalculatore(_ password: String) -> Int {
+    public func scoreCalculatore(_ password: String) -> Int {
         var totalScore: Int = 0
 
         totalScore += LetterOnly.score(password)

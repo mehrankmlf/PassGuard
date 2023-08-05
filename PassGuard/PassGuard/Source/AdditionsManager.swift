@@ -9,7 +9,7 @@ import Foundation
 
 open class AdditionsManager: Calculatable {
     
-    func scoreCalculatore(_ password: String) -> Int {
+    public func scoreCalculatore(_ password: String) -> Int {
         var totalScore: Int = 0
 
         totalScore += LenghtMeterRule.score(password)
