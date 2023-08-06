@@ -9,7 +9,7 @@ import Foundation
 
 internal struct SequentialNumber: EnvironmentRules {
     /// Check password contains sequnetial number digits then count it and
-    /// calculate it base on formula.
+    /// calculate it base on formula (forward and reverse).
     ///
     /// ```
     /// print(RepeatCharacters.score("1234567")) // "-15"

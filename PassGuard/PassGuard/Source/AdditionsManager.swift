@@ -8,6 +8,12 @@
 import Foundation
 
 internal struct AdditionsManager: Calculatable {
+    /// Calculated all of the rules that need to addition.
+    ///
+    /// - Parameters:
+    ///     - password: The password to be welcomed.
+    ///
+    /// - Returns: score according to input password`.
     internal func scoreCalculatore(_ password: String) -> Int {
         var totalScore: Int = 0
 

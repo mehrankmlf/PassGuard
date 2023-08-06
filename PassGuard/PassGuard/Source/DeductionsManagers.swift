@@ -8,6 +8,12 @@
 import Foundation
 
 internal struct DeductionsManager: Calculatable {
+    /// Calculated all of the rules that need to deduction.
+    ///
+    /// - Parameters:
+    ///     - password: The password to be welcomed.
+    ///
+    /// - Returns: score according to input password`.
      func scoreCalculatore(_ password: String) -> Int {
         var totalScore: Int = 0
 

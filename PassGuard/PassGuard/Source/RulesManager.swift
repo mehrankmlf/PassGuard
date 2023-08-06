@@ -35,10 +35,20 @@ extension RuleManagement: Manageable {
         return self.strenghtMeter(finalScore)
     }
     
+    ///Determine complexity based on overall score.
+    ///
+    /// - Parameters:
+    ///     - password: The password to be welcomed.
+    ///
+    /// - Returns: score according to input password`.
     internal func strenghtMeter(_ score: Int) -> StrenghtType {
         
         var finalScore = score
         
+        /* The final score might get
+         beyond 100 scores base on
+         calculated scores.
+         */
         if score > 100 {
             finalScore = 100
         }else if score < 0 {

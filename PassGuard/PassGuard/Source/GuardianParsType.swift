@@ -29,7 +29,7 @@ extension StrenghtType {
     }
 }
 
-enum RegexType {
+internal enum RegexType {
     static let specialChar: String  = "!@#$%^&*()_+-=[]{}|;':\",./<>?\\"
     static let numbers: String      = "^[0-9]+$"
     static let onlyLetters: String  = "[^A-Za-zÀ-ÖØ-öø-ÿ]"

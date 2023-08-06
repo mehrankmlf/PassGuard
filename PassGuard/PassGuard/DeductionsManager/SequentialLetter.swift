@@ -9,7 +9,7 @@ import Foundation
 
 internal struct SequentialLetter: EnvironmentRules {
     /// Check password contains sequnetial alphabet letter then count it and
-    /// calculate it base on formula.
+    /// calculate it base on formula (forward and reverse).
     ///
     /// ```
     /// print(RepeatCharacters.score("abcde")) // "-9"

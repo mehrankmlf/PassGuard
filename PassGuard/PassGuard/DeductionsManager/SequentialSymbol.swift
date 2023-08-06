@@ -9,7 +9,7 @@ import Foundation
 
 internal struct SequentialSymbol: EnvironmentRules {
     /// Check password contains sequnetial symbol then count it and
-    /// calculate it base on formula.
+    /// calculate it base on formula (forward and reverse). 
     ///
     /// ```
     /// print(RepeatCharacters.score("!@#$%^")) // "-12"

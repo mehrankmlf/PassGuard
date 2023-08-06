@@ -173,12 +173,12 @@
 			children = (
 				4566A0B92A7E692D001EB39C /* GuardianPars.swift */,
 				4566A0BA2A7E692D001EB39C /* AdditionsManager.swift */,
+				4566A0BE2A7E692D001EB39C /* RulesManager.swift */,
 				4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */,
 				4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */,
 				4566A0BC2A7E692D001EB39C /* Calculatable.swift */,
 				4566A0B72A7E692D001EB39C /* Manageable.swift */,
 				4566A0B82A7E692D001EB39C /* GuardianParsType.swift */,
-				4566A0BE2A7E692D001EB39C /* RulesManager.swift */,
 				4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */,
 			);
 			path = Source;
