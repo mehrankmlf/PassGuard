@@ -24,33 +24,33 @@ internal struct RepeatCharacters: EnvironmentRules {
     /// - Returns: score according to input password`.
     static func score(_ password: String) -> Int {
         
-        var nRepInc = 0
-        var nRepChar = 0
-        let arrPwd = Array(password)
-        let arrPwdLen = arrPwd.count
+        var count = 0
+        var repeatedCharacters = 0
+        let passwordArray = Array(password)
+        let passwordLength = passwordArray.count
         
-        for a in 0..<arrPwdLen {
-            var bCharExists = false
+        for index in 0..<passwordLength {
+            var charExists = false
             
-            for b in 0..<arrPwdLen {
-                if arrPwd[a] == arrPwd[b] && a != b { /* repeat character exists */
-                    bCharExists = true
+            for b in 0..<passwordLength {
+                if passwordArray[index] == passwordArray[b] && index != b { /* repeat character exists */
+                    charExists = true
                     /*
                      Calculate increment deduction based on proximity to identical characters
                      Deduction is incremented each time a new match is discovered
                      Deduction amount is based on total password length divided by the
                      difference of distance between currently selected match
                      */
-                    nRepInc += Int(abs(Double(arrPwdLen) / Double(b - a)))
+                    count += Int(abs(Double(passwordLength) / Double(b - index)))
                 }
             }
             
-            if bCharExists {
-                nRepChar += 1
-                let nUnqChar = arrPwdLen - nRepChar
-                nRepInc = (nUnqChar != 0) ? Int(ceil(Double(nRepInc) / Double(nUnqChar))) : Int(ceil(Double(nRepInc)))
+            if charExists {
+                repeatedCharacters += 1
+                let uniqueCharacters = passwordLength - repeatedCharacters
+                count = (uniqueCharacters != 0) ? Int(ceil(Double(count) / Double(uniqueCharacters))) : Int(ceil(Double(count)))
             }
         }
-        return nRepInc
+        return count
     }
 }
