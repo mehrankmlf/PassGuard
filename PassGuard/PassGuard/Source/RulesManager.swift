@@ -60,7 +60,7 @@ extension RuleManagement: Manageable {
         case 80...100:
             return .veryStrong
         default:
-            return .veryWeak
+            return .tooShort
         }
     }
 }

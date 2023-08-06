@@ -13,8 +13,8 @@
 		45111CED2A51834F00D3CF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45111CEC2A51834F00D3CF73 /* Assets.xcassets */; };
 		45111CF02A51834F00D3CF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45111CEE2A51834F00D3CF73 /* LaunchScreen.storyboard */; };
 		45111CF82A5185CD00D3CF73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45111CF72A5185CD00D3CF73 /* MainViewController.swift */; };
-		459375A52A7F6B5B001A5E25 /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459375A32A7F6A9B001A5E25 /* PassGuard.framework */; };
-		459375A62A7F6B5B001A5E25 /* PassGuard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459375A32A7F6A9B001A5E25 /* PassGuard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		459375A92A7F718B001A5E25 /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459375A72A7F7161001A5E25 /* PassGuard.framework */; };
+		459375AA2A7F718B001A5E25 /* PassGuard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459375A72A7F7161001A5E25 /* PassGuard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45D204B82A5402E80048C613 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D204B72A5402E80048C613 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				459375A62A7F6B5B001A5E25 /* PassGuard.framework in Embed Frameworks */,
+				459375AA2A7F718B001A5E25 /* PassGuard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +41,7 @@
 		45111CEF2A51834F00D3CF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45111CF12A51834F00D3CF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45111CF72A5185CD00D3CF73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		459375A32A7F6A9B001A5E25 /* PassGuard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassGuard.framework; sourceTree = "<group>"; };
+		459375A72A7F7161001A5E25 /* PassGuard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassGuard.framework; sourceTree = "<group>"; };
 		45D204B72A5402E80048C613 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459375A52A7F6B5B001A5E25 /* PassGuard.framework in Frameworks */,
+				459375A92A7F718B001A5E25 /* PassGuard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 				45111CF72A5185CD00D3CF73 /* MainViewController.swift */,
 				45111CE92A51834E00D3CF73 /* Main.storyboard */,
 				45111CEC2A51834F00D3CF73 /* Assets.xcassets */,
-				459375A32A7F6A9B001A5E25 /* PassGuard.framework */,
+				459375A72A7F7161001A5E25 /* PassGuard.framework */,
 				45111CEE2A51834F00D3CF73 /* LaunchScreen.storyboard */,
 				45111CF12A51834F00D3CF73 /* Info.plist */,
 			);
