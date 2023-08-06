@@ -9,6 +9,7 @@ import UIKit
 import Combine
 
 public extension UITextField {
+    @available(iOS 13, *)
     var passGuardTextPublisher: AnyPublisher<String, Never> {
         NotificationCenter.default
             .publisher(for: UITextField.textDidChangeNotification, object: self)
