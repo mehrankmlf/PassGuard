@@ -22,8 +22,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.txtPassword.delegate = self
         self.txtPassword.textPublisher
             .sink { password in
-//               let score = GuardianPars.strenghMeter(password)
-//                self.lblState.text = score.description
+                let score = GuardianPars.strenghMeter(password)
+                self.lblState.text = score.description
             }.store(in: &subscriber)
     }
     

@@ -7,9 +7,9 @@
 
 import Foundation
 
-open class AdditionsManager: Calculatable {
+internal struct AdditionsManager: Calculatable {
     
-    public func scoreCalculatore(_ password: String) -> Int {
+    internal func scoreCalculatore(_ password: String) -> Int {
         var totalScore: Int = 0
 
         totalScore += LenghtMeterRule.score(password)

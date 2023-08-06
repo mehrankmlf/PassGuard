@@ -7,12 +7,9 @@
 
 import Foundation
 
-public class GuardianPars {
+public struct GuardianPars {
     
-    let manager = RuleManagement()
-
     public static func strenghMeter(_ password: String) -> StrenghtType {
-        let manager = RuleManagement()
-        return  manager.check(password)
+        return  RuleManagement.shared.check(password)
     }
 }

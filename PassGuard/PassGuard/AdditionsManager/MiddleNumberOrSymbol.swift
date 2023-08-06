@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct MiddleNumberOrSymbol: EnvironmentRules {
+internal struct MiddleNumberOrSymbol: EnvironmentRules {
     static func score(_ password: String) -> Int {
         guard !password.isEmpty,
-               password.count > 3
+              password.count > 3
         else {return 0}
         
         var count: Int = 0
@@ -22,11 +22,11 @@ struct MiddleNumberOrSymbol: EnvironmentRules {
         let specialCharacterSet = CharacterSet(charactersIn: RegexType.specialChar)
         let specialCharacterCount = input.filter { specialCharacterSet.contains($0.unicodeScalars.first!) }.count
         count += specialCharacterCount
-
+        
         let numberCharacterSet = CharacterSet.decimalDigits
         let numberCharacterCount = input.components(separatedBy: numberCharacterSet.inverted).joined().count
         count += numberCharacterCount
-
+        
         return count * 2
     }
 }

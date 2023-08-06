@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LetterOnly: EnvironmentRules {
+internal struct LetterOnly: EnvironmentRules {
     static func score(_ password: String) -> Int {
         var score: Int = 0
         

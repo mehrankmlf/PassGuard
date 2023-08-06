@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NumberOnly: EnvironmentRules {
+internal struct NumberOnly: EnvironmentRules {
     static func score(_ password: String) -> Int {
         
         let numbers: Set<Character> = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]

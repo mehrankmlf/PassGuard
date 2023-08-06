@@ -8,11 +8,11 @@
 import Foundation
 import Combine
 
-struct LenghtMeterRule: EnvironmentRules {
+internal struct LenghtMeterRule: EnvironmentRules {
     static func score(_ password: String) -> Int {
-         let count = password.count
-         return count * 4
-     }
+        let count = password.count
+        return count * 4
+    }
 }
 
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ConsecutiveUppercase: EnvironmentRules {
+internal struct ConsecutiveUppercase: EnvironmentRules {
     static func score(_ password: String) -> Int {
         var count = 0
         var isConsecutive = false

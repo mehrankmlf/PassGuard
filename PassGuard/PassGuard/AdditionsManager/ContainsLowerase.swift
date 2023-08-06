@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContainsLowercase: EnvironmentRules {
+internal struct ContainsLowercase: EnvironmentRules {
     static func score(_ password: String) -> Int {
         guard !password.isEmpty else {return 0}
         

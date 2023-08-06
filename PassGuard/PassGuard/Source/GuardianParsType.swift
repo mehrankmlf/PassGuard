@@ -8,6 +8,7 @@
 import Foundation
 
 public enum StrenghtType {
+    case tooShort
     case veryWeak
     case weak
     case medium
@@ -16,22 +17,23 @@ public enum StrenghtType {
 }
 
 extension StrenghtType {
-    var description: String {
+    public var description: String {
         switch self {
-        case .veryWeak: return "very Weak"
-        case .weak: return "Weak"
-        case .medium: return "Medium"
-        case .strong: return "Strong"
-        case .veryStrong: return "Very Strong"
+        case .tooShort:     return "Too Short"
+        case .veryWeak:     return "Very Weak"
+        case .weak:         return "Weak"
+        case .medium:       return "Medium"
+        case .strong:       return "Strong"
+        case .veryStrong:   return "Very Strong"
         }
     }
 }
 
 enum RegexType {
-    static let specialChar: String = "!@#$%^&*()_+-=[]{}|;':\",./<>?\\"
-    static let numbers: String = "^[0-9]+$"
-    static let onlyLetters: String = "[^A-Za-zÀ-ÖØ-öø-ÿ]"
-    static let onlyNumber: String = "^[0-9]"
+    static let specialChar: String  = "!@#$%^&*()_+-=[]{}|;':\",./<>?\\"
+    static let numbers: String      = "^[0-9]+$"
+    static let onlyLetters: String  = "[^A-Za-zÀ-ÖØ-öø-ÿ]"
+    static let onlyNumber: String   = "^[0-9]"
 }
 
 

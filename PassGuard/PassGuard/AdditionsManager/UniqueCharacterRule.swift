@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-struct UniqueCharacterRule: EnvironmentRules {
+internal struct UniqueCharacterRule: EnvironmentRules {
     static func score(_ password: String) -> Int {
         let count = Set(password).count
         return min(count * 2, 5)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CosecutiveNumbers: EnvironmentRules {
+internal struct CosecutiveNumbers: EnvironmentRules {
     static func score(_ password: String) -> Int {
         var count = 0
         var isConsecutive = false

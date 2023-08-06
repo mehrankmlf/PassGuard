@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContainsUppercase: EnvironmentRules {
+internal struct ContainsUppercase: EnvironmentRules {
     static func score(_ password: String) -> Int {
         guard !password.isEmpty else {return 0}
         

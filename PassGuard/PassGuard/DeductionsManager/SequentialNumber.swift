@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SequentialNumber: EnvironmentRules {
+internal struct SequentialNumber: EnvironmentRules {
     static func score(_ password: String) -> Int {
         guard password.count >= 2 else {
             return 0
