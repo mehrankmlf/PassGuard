@@ -14,7 +14,7 @@ internal struct AdditionsManager: Calculatable {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-    internal func scoreCalculatore(_ password: String) -> Int {
+     func scoreCalculatore(_ password: String) -> Int {
         var totalScore: Int = 0
 
         totalScore += LenghtMeterRule.score(password)

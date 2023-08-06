@@ -22,7 +22,7 @@ internal struct DeductionsManager: Calculatable {
         totalScore += RepeatCharacters.score(password)
         totalScore += ConsecutiveUppercase.score(password)
         totalScore += ConsecutiveLowercase.score(password)
-        totalScore += CosecutiveNumbers.score(password)
+        totalScore += ConsecutiveNumbers.score(password)
         totalScore += SequentialLetter.score(password)
         totalScore += SequentialNumber.score(password)
         totalScore += SequentialSymbol.score(password)

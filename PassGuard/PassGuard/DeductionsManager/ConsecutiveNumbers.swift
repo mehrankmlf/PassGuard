@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct CosecutiveNumbers: EnvironmentRules {
+internal struct ConsecutiveNumbers: EnvironmentRules {
     /// Check password contains consecutive nubmer then count it and
     /// calculate it base on formula.
     ///
