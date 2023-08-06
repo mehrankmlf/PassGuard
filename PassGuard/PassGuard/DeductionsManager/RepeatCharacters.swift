@@ -9,6 +9,7 @@ import Foundation
 
 internal struct RepeatCharacters: EnvironmentRules {
     static func score(_ password: String) -> Int {
+        
         var nRepInc = 0
         var nRepChar = 0
         let arrPwd = Array(password)

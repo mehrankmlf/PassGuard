@@ -8,6 +8,20 @@
 import Foundation
 
 internal struct MiddleNumberOrSymbol: EnvironmentRules {
+    /// Check password contains middle number and special letters then
+    ///  count it and multiply it by 2
+    ///
+    /// ```
+    /// print(MiddleNumberOrSymbol.score("Hello!@345world")) // "10"
+    /// ```
+    ///
+    ////// > formula: The formula based on which the score is calculated
+    /// > +(n*2)
+    ///
+    /// - Parameters:
+    ///     - password: The password to be welcomed.
+    ///
+    /// - Returns: score according to input password`.
     static func score(_ password: String) -> Int {
         guard !password.isEmpty,
               password.count > 3

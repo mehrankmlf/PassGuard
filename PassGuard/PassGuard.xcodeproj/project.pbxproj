@@ -141,11 +141,11 @@
 		4566A0942A7E68D7001EB39C /* AdditionsManager */ = {
 			isa = PBXGroup;
 			children = (
+				4566A0992A7E68FA001EB39C /* LenghtMeterRule.swift */,
+				4566A09B2A7E68FA001EB39C /* ContainsUppercase.swift */,
 				4566A0972A7E68F9001EB39C /* ContainsLowerase.swift */,
 				4566A09A2A7E68FA001EB39C /* ContainsNumbers.swift */,
 				4566A09C2A7E68FA001EB39C /* ContainsSpecialKeywords.swift */,
-				4566A09B2A7E68FA001EB39C /* ContainsUppercase.swift */,
-				4566A0992A7E68FA001EB39C /* LenghtMeterRule.swift */,
 				4566A0982A7E68F9001EB39C /* MiddleNumberOrSymbol.swift */,
 				4566A0962A7E68F9001EB39C /* UniqueCharacterRule.swift */,
 			);
