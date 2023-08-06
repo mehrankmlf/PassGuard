@@ -20,7 +20,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.txtPassword.delegate = self
-        self.txtPassword.textPublisher
+        self.txtPassword.passGuardTextPublisher
             .sink { password in
                 let score = GuardianPars.strenghMeter(password)
                 self.lblState.text = score.description

@@ -23,7 +23,12 @@ internal struct RuleManagement {
 }
 
 extension RuleManagement: Manageable {
-    
+    ///Determine state based on overall score that achived by addition and deduction the rules accrding the formula.
+    ///
+    /// - Parameters:
+    ///     - password: The password to be welcomed.
+    ///
+    /// - Returns: StrenghtType according to input password`.
     @discardableResult
     internal func check(_ password: String) -> StrenghtType {
         
@@ -40,7 +45,7 @@ extension RuleManagement: Manageable {
     /// - Parameters:
     ///     - password: The password to be welcomed.
     ///
-    /// - Returns: score according to input password`.
+    /// - Returns: StrenghtType according to input password`.
     internal func strenghtMeter(_ score: Int) -> StrenghtType {
         
         var finalScore = score
