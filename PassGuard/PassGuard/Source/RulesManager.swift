@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 
 internal struct RuleManagement {
     
@@ -14,9 +13,7 @@ internal struct RuleManagement {
     
     private var additionsManager: Calculatable
     private var deductionsManager: Calculatable
-    
-    var subscriber = Set<AnyCancellable>()
-    
+
     init(additionsManager: Calculatable = AdditionsManager(),
          deductionsManager: Calculatable = DeductionsManager()
     ) {
