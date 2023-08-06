@@ -8,6 +8,20 @@
 import Foundation
 
 internal struct RepeatCharacters: EnvironmentRules {
+    /// Check password contains repeated letter then count it and
+    /// calculate it base on formula.
+    ///
+    /// ```
+    /// print(RepeatCharacters.score("Helloworld")) // "-1"
+    /// ```
+    ///
+    ////// > formula: The formula based on which the score is calculated
+    /// > -n
+    ///
+    /// - Parameters:
+    ///     - password: The password to be welcomed.
+    ///
+    /// - Returns: score according to input password`.
     static func score(_ password: String) -> Int {
         
         var nRepInc = 0

@@ -8,6 +8,19 @@
 import Foundation
 
 internal struct LetterOnly: EnvironmentRules {
+    /// Check password contains only letter then count it and subtracts it by password.count
+    ///
+    /// ```
+    /// print(LetterOnly.score("Helloworld")) // "-10"
+    /// ```
+    ///
+    ////// > formula: The formula based on which the score is calculated
+    /// > -n
+    ///
+    /// - Parameters:
+    ///     - password: The password to be welcomed.
+    ///
+    /// - Returns: score according to input password`.
     static func score(_ password: String) -> Int {
         var score: Int = 0
         

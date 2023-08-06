@@ -155,12 +155,12 @@
 		4566A0952A7E68DC001EB39C /* DeductionsManager */ = {
 			isa = PBXGroup;
 			children = (
-				4566A0A92A7E690B001EB39C /* ConsecutiveLowercase.swift */,
-				4566A0AC2A7E690B001EB39C /* ConsecutiveUppercase.swift */,
-				4566A0AA2A7E690B001EB39C /* CosecutiveNumbers.swift */,
 				4566A0A52A7E690B001EB39C /* LetterOnly.swift */,
 				4566A0A42A7E690B001EB39C /* NumberOnly.swift */,
 				4566A0A72A7E690B001EB39C /* RepeatCharacters.swift */,
+				4566A0AC2A7E690B001EB39C /* ConsecutiveUppercase.swift */,
+				4566A0A92A7E690B001EB39C /* ConsecutiveLowercase.swift */,
+				4566A0AA2A7E690B001EB39C /* CosecutiveNumbers.swift */,
 				4566A0AB2A7E690B001EB39C /* SequentialLetter.swift */,
 				4566A0A62A7E690B001EB39C /* SequentialNumber.swift */,
 				4566A0A82A7E690B001EB39C /* SequentialSymbol.swift */,
