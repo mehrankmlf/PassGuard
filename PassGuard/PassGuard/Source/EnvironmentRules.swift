@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol EnvironmentRules {
-    static func score(_ password: String) -> Int
+     func score(_ password: String) -> Int
 }

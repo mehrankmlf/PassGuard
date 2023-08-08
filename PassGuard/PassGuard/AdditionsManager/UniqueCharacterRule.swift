@@ -23,7 +23,7 @@ internal struct UniqueCharacterRule: EnvironmentRules {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-    static func score(_ password: String) -> Int {
+     func score(_ password: String) -> Int {
         let count = Set(password).count
         return min(count * 2, 5)
     }

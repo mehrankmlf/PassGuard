@@ -21,7 +21,7 @@ internal struct LetterOnly: EnvironmentRules {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-    static func score(_ password: String) -> Int {
+     func score(_ password: String) -> Int {
         var score: Int = 0
         
         if self.onlyLettersChecker(password) {
@@ -31,7 +31,7 @@ internal struct LetterOnly: EnvironmentRules {
         return score
     }
     
-    private static func onlyLettersChecker(_ password: String) -> Bool {
+    private func onlyLettersChecker(_ password: String) -> Bool {
         return password.range(of: RegexType.onlyLetters, options: .regularExpression) == nil
     }
 }

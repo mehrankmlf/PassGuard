@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4566A07F2A7E6837001EB39C /* PassGuard.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4566A07E2A7E6837001EB39C /* PassGuard.docc */; };
 		4566A0852A7E6838001EB39C /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566A07A2A7E6837001EB39C /* PassGuard.framework */; };
-		4566A08A2A7E6838001EB39C /* PassGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0892A7E6838001EB39C /* PassGuardTests.swift */; };
 		4566A08B2A7E6838001EB39C /* PassGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4566A07D2A7E6837001EB39C /* PassGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4566A09D2A7E68FA001EB39C /* UniqueCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0962A7E68F9001EB39C /* UniqueCharacterRule.swift */; };
 		4566A09E2A7E68FA001EB39C /* ContainsLowerase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0972A7E68F9001EB39C /* ContainsLowerase.swift */; };
@@ -38,6 +37,9 @@
 		4566A0C82A7E692D001EB39C /* EnvironmentRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */; };
 		459375B22A7FAA79001A5E25 /* AditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B12A7FAA79001A5E25 /* AditionsTests.swift */; };
 		459375B52A7FB3BC001A5E25 /* DeductionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B42A7FB3BC001A5E25 /* DeductionsTests.swift */; };
+		459375B72A7FB717001A5E25 /* MockLenghtMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B62A7FB717001A5E25 /* MockLenghtMeter.swift */; };
+		459375B92A7FB76D001A5E25 /* MockContaindUpercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B82A7FB76D001A5E25 /* MockContaindUpercase.swift */; };
+		459375BB2A7FB7C3001A5E25 /* MockContainsLowercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375BA2A7FB7C3001A5E25 /* MockContainsLowercase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,6 @@
 		4566A07D2A7E6837001EB39C /* PassGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassGuard.h; sourceTree = "<group>"; };
 		4566A07E2A7E6837001EB39C /* PassGuard.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PassGuard.docc; sourceTree = "<group>"; };
 		4566A0842A7E6838001EB39C /* PassGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4566A0892A7E6838001EB39C /* PassGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGuardTests.swift; sourceTree = "<group>"; };
 		4566A0962A7E68F9001EB39C /* UniqueCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueCharacterRule.swift; sourceTree = "<group>"; };
 		4566A0972A7E68F9001EB39C /* ContainsLowerase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsLowerase.swift; sourceTree = "<group>"; };
 		4566A0982A7E68F9001EB39C /* MiddleNumberOrSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleNumberOrSymbol.swift; sourceTree = "<group>"; };
@@ -83,6 +84,9 @@
 		4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentRules.swift; sourceTree = "<group>"; };
 		459375B12A7FAA79001A5E25 /* AditionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AditionsTests.swift; sourceTree = "<group>"; };
 		459375B42A7FB3BC001A5E25 /* DeductionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionsTests.swift; sourceTree = "<group>"; };
+		459375B62A7FB717001A5E25 /* MockLenghtMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLenghtMeter.swift; sourceTree = "<group>"; };
+		459375B82A7FB76D001A5E25 /* MockContaindUpercase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContaindUpercase.swift; sourceTree = "<group>"; };
+		459375BA2A7FB7C3001A5E25 /* MockContainsLowercase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContainsLowercase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				459375B32A7FACDD001A5E25 /* MockAdditionsRules */,
-				4566A0892A7E6838001EB39C /* PassGuardTests.swift */,
 				459375B12A7FAA79001A5E25 /* AditionsTests.swift */,
 				459375B42A7FB3BC001A5E25 /* DeductionsTests.swift */,
 			);
@@ -194,6 +197,9 @@
 		459375B32A7FACDD001A5E25 /* MockAdditionsRules */ = {
 			isa = PBXGroup;
 			children = (
+				459375B62A7FB717001A5E25 /* MockLenghtMeter.swift */,
+				459375B82A7FB76D001A5E25 /* MockContaindUpercase.swift */,
+				459375BA2A7FB7C3001A5E25 /* MockContainsLowercase.swift */,
 			);
 			path = MockAdditionsRules;
 			sourceTree = "<group>";
@@ -340,9 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4566A08A2A7E6838001EB39C /* PassGuardTests.swift in Sources */,
 				459375B22A7FAA79001A5E25 /* AditionsTests.swift in Sources */,
+				459375B72A7FB717001A5E25 /* MockLenghtMeter.swift in Sources */,
 				459375B52A7FB3BC001A5E25 /* DeductionsTests.swift in Sources */,
+				459375BB2A7FB7C3001A5E25 /* MockContainsLowercase.swift in Sources */,
+				459375B92A7FB76D001A5E25 /* MockContaindUpercase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

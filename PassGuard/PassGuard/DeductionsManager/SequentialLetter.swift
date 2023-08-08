@@ -22,7 +22,7 @@ internal struct SequentialLetter: EnvironmentRules {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-    static func score(_ password: String) -> Int {
+     func score(_ password: String) -> Int {
         guard password.count >= 2 else {
             return 0
         }

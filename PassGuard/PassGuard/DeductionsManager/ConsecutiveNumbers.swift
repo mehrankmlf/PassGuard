@@ -22,7 +22,7 @@ internal struct ConsecutiveNumbers: EnvironmentRules {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-    static func score(_ password: String) -> Int {
+     func score(_ password: String) -> Int {
         var count = 0
         var isConsecutive = false
         

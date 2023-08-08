@@ -22,7 +22,7 @@ internal struct MiddleNumberOrSymbol: EnvironmentRules {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-    static func score(_ password: String) -> Int {
+     func score(_ password: String) -> Int {
         guard !password.isEmpty,
               password.count > 3
         else {return 0}

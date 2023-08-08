@@ -21,7 +21,7 @@ internal struct ContainsNumbers: EnvironmentRules {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-    static func score(_ password: String) -> Int {
+     func score(_ password: String) -> Int {
         guard !password.isEmpty else {return 0}
         
         let numbers = CharacterSet.decimalDigits

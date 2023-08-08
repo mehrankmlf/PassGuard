@@ -7,26 +7,37 @@
 
 import Foundation
 
-internal struct DeductionsManager: Calculatable {
+internal struct DeductionsManager {
+    
+    let rules: [EnvironmentRules]
+    
+    init(rules: [EnvironmentRules] = [LetterOnly(),
+                                      NumberOnly(),
+                                      RepeatCharacters(),
+                                      ConsecutiveNumbers(),
+                                      ConsecutiveUppercase(),
+                                      ConsecutiveLowercase(),
+                                      ConsecutiveNumbers(),
+                                      SequentialLetter(),
+                                      SequentialNumber(),
+                                      SequentialSymbol()]) {
+        self.rules = rules
+    }
+}
+
+extension DeductionsManager: Calculatable {
     /// Calculated all of the rules that need to deduction.
     ///
     /// - Parameters:
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: score according to input password`.
-     func scoreCalculatore(_ password: String) -> Int {
+    func scoreCalculatore(_ password: String) -> Int {
         var totalScore: Int = 0
-
-        totalScore += LetterOnly.score(password)
-        totalScore += NumberOnly.score(password)
-        totalScore += RepeatCharacters.score(password)
-        totalScore += ConsecutiveUppercase.score(password)
-        totalScore += ConsecutiveLowercase.score(password)
-        totalScore += ConsecutiveNumbers.score(password)
-        totalScore += SequentialLetter.score(password)
-        totalScore += SequentialNumber.score(password)
-        totalScore += SequentialSymbol.score(password)
         
+        for rule in rules {
+            totalScore += rule.score(password)
+        }
         return totalScore
     }
 }
