@@ -45,6 +45,7 @@
 		45BE8E322A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E312A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift */; };
 		45BE8E342A8250C900C208E1 /* MockUniqueCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E332A8250C900C208E1 /* MockUniqueCharacterRule.swift */; };
 		45BE8E362A8253B100C208E1 /* AdditionalManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E352A8253B100C208E1 /* AdditionalManagerTest.swift */; };
+		45BE8E382A825C5E00C208E1 /* RuleManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E372A825C5E00C208E1 /* RuleManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		45BE8E312A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMiddleNumberOrSymbol.swift; sourceTree = "<group>"; };
 		45BE8E332A8250C900C208E1 /* MockUniqueCharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUniqueCharacterRule.swift; sourceTree = "<group>"; };
 		45BE8E352A8253B100C208E1 /* AdditionalManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalManagerTest.swift; sourceTree = "<group>"; };
+		45BE8E372A825C5E00C208E1 /* RuleManagerTest.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = RuleManagerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				459375B12A7FAA79001A5E25 /* AditionsTests.swift */,
 				459375B42A7FB3BC001A5E25 /* DeductionsTests.swift */,
 				45BE8E352A8253B100C208E1 /* AdditionalManagerTest.swift */,
+				45BE8E372A825C5E00C208E1 /* RuleManagerTest.swift */,
 			);
 			path = PassGuardTests;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			files = (
 				45BE8E2E2A82508A00C208E1 /* MockContainsSpecialKeywords.swift in Sources */,
 				459375B22A7FAA79001A5E25 /* AditionsTests.swift in Sources */,
+				45BE8E382A825C5E00C208E1 /* RuleManagerTest.swift in Sources */,
 				45BE8E342A8250C900C208E1 /* MockUniqueCharacterRule.swift in Sources */,
 				45BE8E322A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift in Sources */,
 				459375B72A7FB717001A5E25 /* MockLenghtMeter.swift in Sources */,
