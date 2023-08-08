@@ -9,9 +9,9 @@ import Foundation
 @testable import PassGuard
 
 struct MockContainsLowercase: EnvironmentRules {
-    static var mockedScore: Int?
+    var mockedScore: Int?
     
-    static func score(_ password: String) -> Int {
+    func score(_ password: String) -> Int {
         return mockedScore ?? 0
     }
 }
