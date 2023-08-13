@@ -7,24 +7,25 @@
 
 import UIKit
 
-open class PassGuard {
+public class PassGuard {
     
-    internal var ruleManager: Manageable
+    private var ruleManager: Manageable
     
-    internal var password: String?
-    
-    public var totalScore: Int {
-        guard let score = self.score() else {return 0}
+    /// Utilize to get input from outside
+    private var password: String?
+    /// Gives the score according to the input in order to use in progress view
+    public var score: Int {
+        guard let score = self.totalScore() else {return 0}
         return score
     }
-    
+    /// Gives the state description base on score. "Strong"
     public var typeDescription: String {
-        guard let type = self.strenghtMeter() else {return ""}
+        guard let type = self.strengthMeter() else {return ""}
         return type.typeDescription
     }
-    
+    /// Gives the state color base on score. weak = .red
     public var typeColor: UIColor {
-        guard let type = self.strenghtMeter() else {return .clear}
+        guard let type = self.strengthMeter() else {return .clear}
         return type.typeColor
     }
     
@@ -36,14 +37,14 @@ open class PassGuard {
         self.init(ruleManager: RuleManagement())
         self.password = password
     }
-    /// Gives the state according to the input
+    /// Gives the totalScore according to the input
     ///
     /// - Parameters:
     ///     - password: The password to be welcomed.
     ///
-    /// - Returns: state according to input password`.
+    /// - Returns: score according to input password`.
     ///
-    internal func score() -> Int? {
+    internal func totalScore() -> Int? {
         guard let password = self.password else {return 0}
         let trimmedPassword = password.trim()
         return self.ruleManager.score(trimmedPassword)
@@ -56,7 +57,7 @@ open class PassGuard {
     ///
     /// - Returns: state according to input password`.
     ///
-    internal func strenghtMeter() -> StrenghtType? {
+    internal func strengthMeter() -> StrenghtType? {
         guard let password = self.password else {return .tooShort}
         let trimmedPassword = password.trim()
         let score = self.ruleManager.score(trimmedPassword)
