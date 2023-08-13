@@ -9,14 +9,14 @@ import Foundation
 
 internal struct RuleManagement {
 
-    private let additionsManager: Calculatable
-    private let deductionsManager: Calculatable
+    private let additionsRules: Calculatable
+    private let deductionsRules: Calculatable
 
-    init(additionsManager: Calculatable = AdditionsManager(),
-         deductionsManager: Calculatable = DeductionsManager()
+    init(additionsRules: Calculatable = AdditionsRules(),
+         deductionsRules: Calculatable = DeductionsRules()
     ) {
-        self.additionsManager = additionsManager
-        self.deductionsManager = deductionsManager
+        self.additionsRules = additionsRules
+        self.deductionsRules = deductionsRules
     }
 }
 
@@ -32,8 +32,8 @@ extension RuleManagement: Manageable {
         
         var finalScore: Int = 0
         
-        finalScore += self.additionsManager.scoreCalculatore(password)
-        finalScore -= self.deductionsManager.scoreCalculatore(password)
+        finalScore += self.additionsRules.scoreCalculatore(password)
+        finalScore -= self.deductionsRules.scoreCalculatore(password)
         
         return finalScore
     }

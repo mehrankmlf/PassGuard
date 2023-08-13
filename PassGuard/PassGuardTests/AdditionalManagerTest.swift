@@ -13,7 +13,7 @@ final class AdditionalManagerTest: XCTestCase {
     var sut: Calculatable!
     
     override func setUp() {
-        sut = AdditionsManager()
+        sut = AdditionsRules()
     }
     
     override func tearDown() {
@@ -51,7 +51,7 @@ final class AdditionalManagerTest: XCTestCase {
                                          mockMiddleNumberOrSymbol,
                                          mockUniqueCharacterRule]
         
-        let manager = AdditionsManager(rules: rules)
+        let manager = AdditionsRules(rules: rules)
         
         let score = manager.scoreCalculatore("Helloword")
         

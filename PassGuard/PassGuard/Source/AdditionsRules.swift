@@ -1,5 +1,5 @@
 //
-//  AdditionsManager.swift
+//  AdditionsRules.swift
 //  Example
 //
 //  Created by Mehran Kamalifard on 7/24/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct AdditionsManager {
+internal struct AdditionsRules {
     
     let rules: [EnvironmentRules]
     
@@ -22,7 +22,7 @@ internal struct AdditionsManager {
     }
 }
 
-extension AdditionsManager: Calculatable {
+extension AdditionsRules: Calculatable {
     /// Calculated all of the rules that need to addition.
     ///
     /// - Parameters:

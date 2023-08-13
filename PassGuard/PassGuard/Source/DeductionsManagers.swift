@@ -1,5 +1,5 @@
 //
-//  DeductionsManager.swift
+//  DeductionsRules.swift
 //  Example
 //
 //  Created by Mehran Kamalifard on 7/25/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct DeductionsManager {
+internal struct DeductionsRules {
     
     let rules: [EnvironmentRules]
     
@@ -25,7 +25,7 @@ internal struct DeductionsManager {
     }
 }
 
-extension DeductionsManager: Calculatable {
+extension DeductionsRules: Calculatable {
     /// Calculated all of the rules that need to deduction.
     ///
     /// - Parameters:

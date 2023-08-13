@@ -29,7 +29,7 @@
 		4566A0C02A7E692D001EB39C /* Manageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B72A7E692D001EB39C /* Manageable.swift */; };
 		4566A0C12A7E692D001EB39C /* GuardianParsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B82A7E692D001EB39C /* GuardianParsType.swift */; };
 		4566A0C22A7E692D001EB39C /* PassGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B92A7E692D001EB39C /* PassGuard.swift */; };
-		4566A0C32A7E692D001EB39C /* AdditionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BA2A7E692D001EB39C /* AdditionsManager.swift */; };
+		4566A0C32A7E692D001EB39C /* AdditionsRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */; };
 		4566A0C42A7E692D001EB39C /* UITextfield + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */; };
 		4566A0C52A7E692D001EB39C /* Calculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BC2A7E692D001EB39C /* Calculatable.swift */; };
 		4566A0C62A7E692D001EB39C /* DeductionsManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */; };
@@ -83,7 +83,7 @@
 		4566A0B72A7E692D001EB39C /* Manageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manageable.swift; sourceTree = "<group>"; };
 		4566A0B82A7E692D001EB39C /* GuardianParsType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianParsType.swift; sourceTree = "<group>"; };
 		4566A0B92A7E692D001EB39C /* PassGuard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGuard.swift; sourceTree = "<group>"; };
-		4566A0BA2A7E692D001EB39C /* AdditionsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionsManager.swift; sourceTree = "<group>"; };
+		4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionsRules.swift; sourceTree = "<group>"; };
 		4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextfield + Extension.swift"; sourceTree = "<group>"; };
 		4566A0BC2A7E692D001EB39C /* Calculatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculatable.swift; sourceTree = "<group>"; };
 		4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeductionsManagers.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 			children = (
 				4566A0B92A7E692D001EB39C /* PassGuard.swift */,
 				4566A0BE2A7E692D001EB39C /* RulesManager.swift */,
-				4566A0BA2A7E692D001EB39C /* AdditionsManager.swift */,
+				4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */,
 				4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */,
 				4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */,
 				4566A0BC2A7E692D001EB39C /* Calculatable.swift */,
@@ -342,7 +342,7 @@
 				4566A0B32A7E690B001EB39C /* ConsecutiveNumbers.swift in Sources */,
 				4566A0B02A7E690B001EB39C /* RepeatCharacters.swift in Sources */,
 				4566A09F2A7E68FA001EB39C /* MiddleNumberOrSymbol.swift in Sources */,
-				4566A0C32A7E692D001EB39C /* AdditionsManager.swift in Sources */,
+				4566A0C32A7E692D001EB39C /* AdditionsRules.swift in Sources */,
 				4566A0A12A7E68FA001EB39C /* ContainsNumbers.swift in Sources */,
 				4566A0C02A7E692D001EB39C /* Manageable.swift in Sources */,
 				4566A0AE2A7E690B001EB39C /* LetterOnly.swift in Sources */,
