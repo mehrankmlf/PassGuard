@@ -20,11 +20,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.txtPassword.delegate = self
+        self.setupView()
         self.txtPassword.passGuardTextPublisher
             .sink { password in
-                let score = GuardianPars.strenghMeter(password)
-                self.lblState.text = score.description
+                let passGuard = PassGuard(password: password)
+                self.lblState.text = passGuard.typeDescription
+                self.lblState.backgroundColor = passGuard.typeColor
             }.store(in: &subscriber)
+    }
+    
+    private func setupView() {
+        self.lblState.layer.cornerRadius = 5
+        self.lblState.layer.masksToBounds = true
     }
     
     @IBAction func btnLogin_Clicked(_ sender: Any) {

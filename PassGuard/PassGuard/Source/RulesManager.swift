@@ -8,11 +8,9 @@
 import Foundation
 
 internal struct RuleManagement {
-    
-    static let shared = RuleManagement()
-    
-    private var additionsManager: Calculatable
-    private var deductionsManager: Calculatable
+
+    private let additionsManager: Calculatable
+    private let deductionsManager: Calculatable
 
     init(additionsManager: Calculatable = AdditionsManager(),
          deductionsManager: Calculatable = DeductionsManager()
@@ -30,14 +28,14 @@ extension RuleManagement: Manageable {
     ///
     /// - Returns: StrenghtType according to input password`.
     @discardableResult
-    internal func check(_ password: String) -> StrenghtType {
+    internal func score(_ password: String) -> Int {
         
         var finalScore: Int = 0
         
         finalScore += self.additionsManager.scoreCalculatore(password)
         finalScore -= self.deductionsManager.scoreCalculatore(password)
         
-        return self.strenghtMeter(finalScore)
+        return finalScore
     }
     
     ///Determine complexity based on overall score.
@@ -47,18 +45,12 @@ extension RuleManagement: Manageable {
     ///
     /// - Returns: StrenghtType according to input password`.
     internal func strenghtMeter(_ score: Int) -> StrenghtType {
-        
-        var finalScore = score
-        
+
         /* The final score might get
          beyond 100 scores base on
          calculated scores.
          */
-        if score > 100 {
-            finalScore = 100
-        }else if score < 0 {
-            finalScore = 0
-        }
+        let finalScore = max(0, min(100, score))
         
         switch finalScore {
         case 0..<20:

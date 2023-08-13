@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Manageable {
-    func check(_ password: String) -> StrenghtType
+public protocol Manageable {
+    func score(_ password: String) -> Int
     func strenghtMeter(_ score: Int) -> StrenghtType
 }
