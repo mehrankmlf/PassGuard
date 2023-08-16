@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// This class provides an easy-to-use PassGuard Framework.
 public class PassGuard {
     
     private var ruleManager: Manageable
@@ -64,3 +65,7 @@ public class PassGuard {
         return self.ruleManager.strenghtMeter(score)
     }
 }
+
+
+
+

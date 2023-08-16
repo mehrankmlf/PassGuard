@@ -7,11 +7,19 @@
 
 import Foundation
 
+/// RuleManagement responsible for managing password strength assessment based on addition and deduction rules.
 internal struct RuleManagement {
 
+    /// The rules for calculating additions.
     private let additionsRules: Calculatable
+    /// The rules for calculating deductions.
     private let deductionsRules: Calculatable
 
+    /// Initializes a new instance of `RuleManagement`.
+    ///
+    /// - Parameters:
+    ///   - additionsRules: The rules for calculating additions. Defaults to `AdditionsRules()`.
+    ///   - deductionsRules: The rules for calculating deductions. Defaults to `DeductionsRules()`.
     init(additionsRules: Calculatable = AdditionsRules(),
          deductionsRules: Calculatable = DeductionsRules()
     ) {
@@ -29,9 +37,9 @@ extension RuleManagement: Manageable {
     /// - Returns: StrenghtType according to input password`.
     @discardableResult
     internal func score(_ password: String) -> Int {
-        
         var finalScore: Int = 0
         
+        // Calculate the addition and deduction scores for the password.
         finalScore += self.additionsRules.scoreCalculatore(password)
         finalScore -= self.deductionsRules.scoreCalculatore(password)
         

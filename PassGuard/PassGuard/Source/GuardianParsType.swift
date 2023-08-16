@@ -31,11 +31,11 @@ extension StrenghtType {
     public var typeColor: UIColor {
         switch self {
         case .tooShort:   return .clear
-        case .veryWeak:   return UIColor(red: 244, green: 60, blue: 43, alpha: 1)
-        case .weak:       return .yellow
-        case .medium:     return .yellow
-        case .strong:     return .green
-        case .veryStrong: return .green
+        case .veryWeak:   return UIColor(red: 244, green: 61, blue: 43, alpha: 1)
+        case .weak:       return UIColor(red: 249, green: 188, blue: 55, alpha: 1)
+        case .medium:     return UIColor(red: 202, green: 216, blue: 64, alpha: 1)
+        case .strong:     return UIColor(red: 133, green: 193, blue: 71, alpha: 1)
+        case .veryStrong: return UIColor(red: 85, green: 181, blue: 73, alpha: 1)
         }
     }
 }

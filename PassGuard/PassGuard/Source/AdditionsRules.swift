@@ -7,10 +7,14 @@
 
 import Foundation
 
+/// AdditionsRules` defines a set of rules to calculate the score of a password based on various environment-related criteria.
 internal struct AdditionsRules {
-    
+    /// The collection of environment rules to be applied when calculating the score.
     let rules: [EnvironmentRules]
     
+    /// Initializes a new instance of `AdditionsRules` with optional custom environment rules.
+    ///
+    /// - Parameter rules: The environment rules to be used for scoring. Defaults to a set of commonly used rules.
     init(rules: [EnvironmentRules] = [LenghtMeterRule(),
                                       ContainsUppercase(),
                                       ContainsLowercase(),

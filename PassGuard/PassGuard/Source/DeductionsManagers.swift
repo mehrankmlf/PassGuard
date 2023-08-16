@@ -7,10 +7,14 @@
 
 import Foundation
 
+/// DeductionsRules` defines a set of rules to calculate deduction scores for a password based on various environment-related criteria.
 internal struct DeductionsRules {
-    
+    /// The collection of environment rules to be applied when calculating deduction scores.
     let rules: [EnvironmentRules]
     
+    /// Initializes a new instance of `DeductionsRules` with optional custom environment rules.
+    ///
+    /// - Parameter rules: The environment rules to be used for deduction scoring. Defaults to a set of commonly used rules.
     init(rules: [EnvironmentRules] = [LetterOnly(),
                                       NumberOnly(),
                                       RepeatCharacters(),
