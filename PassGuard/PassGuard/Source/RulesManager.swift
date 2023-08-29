@@ -9,7 +9,6 @@ import Foundation
 
 /// RuleManagement responsible for managing password strength assessment based on addition and deduction rules.
 internal struct RuleManagement {
-
     /// The rules for calculating additions.
     private let additionsRules: Calculatable
     /// The rules for calculating deductions.
@@ -21,8 +20,7 @@ internal struct RuleManagement {
     ///   - additionsRules: The rules for calculating additions. Defaults to `AdditionsRules()`.
     ///   - deductionsRules: The rules for calculating deductions. Defaults to `DeductionsRules()`.
     init(additionsRules: Calculatable = AdditionsRules(),
-         deductionsRules: Calculatable = DeductionsRules()
-    ) {
+         deductionsRules: Calculatable = DeductionsRules()) {
         self.additionsRules = additionsRules
         self.deductionsRules = deductionsRules
     }
@@ -53,7 +51,7 @@ extension RuleManagement: Manageable {
     ///
     /// - Returns: StrenghtType according to input password`.
     internal func strenghtMeter(_ score: Int) -> StrenghtType {
-
+        
         /* The final score might get
          beyond 100 scores base on
          calculated scores.
@@ -73,6 +71,33 @@ extension RuleManagement: Manageable {
             return .veryStrong
         default:
             return .tooShort
+        }
+    }
+}
+
+extension RuleManagement {
+
+    
+    struct StrenghtTypee {
+        var tooShort: String?
+        var veryWeak: String?
+        var weak: String?
+        var medium: String?
+        var strong: String?
+        var veryStrong: String?
+        
+        init(tooShort: String? = nil,
+             veryWeak: String? = nil,
+             weak: String? = nil,
+             medium: String? = nil,
+             strong: String? = nil,
+             veryStrong: String? = nil) {
+            self.tooShort = tooShort
+            self.veryWeak = veryWeak
+            self.weak = weak
+            self.medium = medium
+            self.strong = strong
+            self.veryStrong = veryStrong
         }
     }
 }

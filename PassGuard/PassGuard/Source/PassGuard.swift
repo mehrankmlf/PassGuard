@@ -13,7 +13,11 @@ public class PassGuard {
     private var ruleManager: Manageable
     
     /// Utilize to get input from outside
-    private var password: String?
+    private var password: String? {
+        didSet {
+            password = password?.trim()
+        }
+    }
     /// Gives the score according to the input in order to use in progress view
     public var score: Int {
         guard let score = self.totalScore() else {return 0}
@@ -47,8 +51,7 @@ public class PassGuard {
     ///
     internal func totalScore() -> Int? {
         guard let password = self.password else {return 0}
-        let trimmedPassword = password.trim()
-        return self.ruleManager.score(trimmedPassword)
+        return self.ruleManager.score(password)
     }
     
     /// Gives the state according to the input
@@ -60,8 +63,7 @@ public class PassGuard {
     ///
     internal func strengthMeter() -> StrenghtType? {
         guard let password = self.password else {return .tooShort}
-        let trimmedPassword = password.trim()
-        let score = self.ruleManager.score(trimmedPassword)
+        let score = self.ruleManager.score(password)
         return self.ruleManager.strenghtMeter(score)
     }
 }

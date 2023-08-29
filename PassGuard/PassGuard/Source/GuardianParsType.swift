@@ -7,7 +7,18 @@
 
 import UIKit
 
-public enum StrenghtType {
+protocol Typeable {
+    var typeDescription: String { get }
+    var typeColor: UIColor { get }
+    func desc(_ tooShort: String,
+                     _ veryWeak: String,
+                     _ weak: String,
+                     _ medium: String,
+                     _ strong: String,
+                     _ veryStrong: String) -> String
+}
+
+public enum StrenghtType: Typeable {
     case tooShort
     case veryWeak
     case weak
@@ -36,6 +47,22 @@ extension StrenghtType {
         case .medium:     return UIColor(red: 202, green: 216, blue: 64, alpha: 1)
         case .strong:     return UIColor(red: 133, green: 193, blue: 71, alpha: 1)
         case .veryStrong: return UIColor(red: 85, green: 181, blue: 73, alpha: 1)
+        }
+    }
+
+    func desc(_ tooShort: String,
+                     _ veryWeak: String,
+                     _ weak: String,
+                     _ medium: String,
+                     _ strong: String,
+                     _ veryStrong: String) -> String {
+        switch self {
+        case .tooShort:     return tooShort
+        case .veryWeak:     return veryWeak
+        case .weak:         return weak
+        case .medium:       return medium
+        case .strong:       return strong
+        case .veryStrong:   return veryWeak
         }
     }
 }
