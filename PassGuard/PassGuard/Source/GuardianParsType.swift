@@ -10,7 +10,7 @@ import UIKit
 protocol Typeable {
     var typeDescription: String { get }
     var typeColor: UIColor { get }
-    func desc(_ tooShort: String,
+    func customTypeDescription(_ tooShort: String,
                      _ veryWeak: String,
                      _ weak: String,
                      _ medium: String,
@@ -50,7 +50,7 @@ extension StrenghtType {
         }
     }
 
-    func desc(_ tooShort: String,
+    func customTypeDescription(_ tooShort: String,
                      _ veryWeak: String,
                      _ weak: String,
                      _ medium: String,
@@ -62,7 +62,7 @@ extension StrenghtType {
         case .weak:         return weak
         case .medium:       return medium
         case .strong:       return strong
-        case .veryStrong:   return veryWeak
+        case .veryStrong:   return veryStrong
         }
     }
 }

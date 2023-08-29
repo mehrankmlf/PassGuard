@@ -32,7 +32,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.setupView()
         self.txtPassword.passGuardTextPublisher
             .sink { password in
+//                let customDescriptions = ["Way Too Short",
+//                                          "Extremely Weak",
+//                                          "Not So Strong",
+//                                          "Fairly Strong",
+//                                          "Super Strong", "Incredibly Strong"]
                 let passGuard = PassGuard(password: password)
+//                                          customDescription: customDescriptions)
                 self.lblState.text = passGuard.typeDescription
                 self.lblState.backgroundColor = passGuard.typeColor
             }.store(in: &subscriber)

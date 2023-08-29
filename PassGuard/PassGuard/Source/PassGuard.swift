@@ -18,6 +18,9 @@ public class PassGuard {
             password = password?.trim()
         }
     }
+    
+    private var customDescription: [String]?
+    
     /// Gives the score according to the input in order to use in progress view
     public var score: Int {
         guard let score = self.totalScore() else {return 0}
@@ -25,8 +28,14 @@ public class PassGuard {
     }
     /// Gives the state description base on score. "Strong"
     public var typeDescription: String {
-        guard let type = self.strengthMeter() else {return ""}
-        return type.typeDescription
+        guard let type = self.strengthMeter() else { return "" }
+        if let customDesc = customDescription, customDesc.count == 6 {
+            return type.customTypeDescription(
+                customDesc[0], customDesc[1], customDesc[2],
+                customDesc[3], customDesc[4], customDesc[5])
+        } else {
+            return type.typeDescription
+        }
     }
     /// Gives the state color base on score. weak = .red
     public var typeColor: UIColor {
@@ -38,9 +47,10 @@ public class PassGuard {
         self.ruleManager = ruleManager
     }
     
-    public convenience init(password: String? = nil) {
+    public convenience init(password: String? = nil, customDescription: [String]? = nil) {
         self.init(ruleManager: RuleManagement())
         self.password = password
+        self.customDescription = customDescription
     }
     /// Gives the totalScore according to the input
     ///

@@ -75,29 +75,3 @@ extension RuleManagement: Manageable {
     }
 }
 
-extension RuleManagement {
-
-    
-    struct StrenghtTypee {
-        var tooShort: String?
-        var veryWeak: String?
-        var weak: String?
-        var medium: String?
-        var strong: String?
-        var veryStrong: String?
-        
-        init(tooShort: String? = nil,
-             veryWeak: String? = nil,
-             weak: String? = nil,
-             medium: String? = nil,
-             strong: String? = nil,
-             veryStrong: String? = nil) {
-            self.tooShort = tooShort
-            self.veryWeak = veryWeak
-            self.weak = weak
-            self.medium = medium
-            self.strong = strong
-            self.veryStrong = veryStrong
-        }
-    }
-}
