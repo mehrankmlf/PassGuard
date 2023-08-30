@@ -1,6 +1,6 @@
 //
 //  PassGuard.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/4/23.
 //
@@ -18,29 +18,25 @@ public class PassGuard {
             password = password?.trim()
         }
     }
-    
+    /// Gives the ability to use custom strenght description
     private var customDescription: [String]?
     
     /// Gives the score according to the input in order to use in progress view
     public var score: Int {
-        guard let score = self.totalScore() else {return 0}
-        return score
+        return totalScore() ?? 0
     }
     /// Gives the state description base on score. "Strong"
-    public var typeDescription: String {
+    public var strengthDescription: String {
         guard let type = self.strengthMeter() else { return "" }
         if let customDesc = customDescription, customDesc.count == 6 {
-            return type.customTypeDescription(
-                customDesc[0], customDesc[1], customDesc[2],
-                customDesc[3], customDesc[4], customDesc[5])
+            return type.customTypeDescription(customDesc)
         } else {
-            return type.typeDescription
+            return type.description
         }
     }
     /// Gives the state color base on score. weak = .red
-    public var typeColor: UIColor {
-        guard let type = self.strengthMeter() else {return .clear}
-        return type.typeColor
+    public var strengthColor: UIColor {
+        return strengthMeter()?.color ?? .clear
     }
     
     internal init(ruleManager: Manageable = RuleManagement()) {
@@ -71,7 +67,7 @@ public class PassGuard {
     ///
     /// - Returns: state according to input password`.
     ///
-    internal func strengthMeter() -> StrenghtType? {
+    internal func strengthMeter() -> StrengthLevel? {
         guard let password = self.password else {return .tooShort}
         let score = self.ruleManager.score(password)
         return self.ruleManager.strenghtMeter(score)

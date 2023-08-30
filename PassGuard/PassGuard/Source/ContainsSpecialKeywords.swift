@@ -1,6 +1,6 @@
 //
 //  ContainsSpecialKeywords.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/5/23.
 //
@@ -24,7 +24,7 @@ internal struct ContainsSpecialKeywords: EnvironmentRules {
      func score(_ password: String) -> Int {
         guard !password.isEmpty else {return 0}
         
-        let specialCharacterSet = CharacterSet(charactersIn: RegexType.specialChar)
+        let specialCharacterSet = CharacterSet(charactersIn: RegexPattern.specialChar)
         let count = password.filter { specialCharacterSet.contains($0.unicodeScalars.first!) }.count
         return count * 6
     }

@@ -1,6 +1,6 @@
 //
 //  Manager.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 8/5/23.
 //
@@ -18,5 +18,5 @@ public protocol Manageable {
     ///
     /// - Parameter score: The overall score calculated from password rules.
     /// - Returns: The strength type of the password.
-    func strenghtMeter(_ score: Int) -> StrenghtType
+    func strenghtMeter(_ score: Int) -> StrengthLevel
 }

@@ -1,6 +1,6 @@
 //
 //  LenghtMeterRule.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/5/23.
 //

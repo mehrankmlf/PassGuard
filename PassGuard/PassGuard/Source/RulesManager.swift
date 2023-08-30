@@ -1,6 +1,6 @@
 //
 //  RulesManager.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/4/23.
 //
@@ -50,7 +50,7 @@ extension RuleManagement: Manageable {
     ///     - password: The password to be welcomed.
     ///
     /// - Returns: StrenghtType according to input password`.
-    internal func strenghtMeter(_ score: Int) -> StrenghtType {
+    internal func strenghtMeter(_ score: Int) -> StrengthLevel {
         
         /* The final score might get
          beyond 100 scores base on

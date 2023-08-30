@@ -1,34 +1,24 @@
 //
 //  GuardianParsType.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/4/23.
 //
 
 import UIKit
 
-protocol Typeable {
-    var typeDescription: String { get }
-    var typeColor: UIColor { get }
-    func customTypeDescription(_ tooShort: String,
-                     _ veryWeak: String,
-                     _ weak: String,
-                     _ medium: String,
-                     _ strong: String,
-                     _ veryStrong: String) -> String
+protocol PasswordStrength {
+    var description: String { get }
+    var color: UIColor { get }
+    func customTypeDescription(_ customDescriptions: [String]) -> String
 }
 
-public enum StrenghtType: Typeable {
-    case tooShort
-    case veryWeak
-    case weak
-    case medium
-    case strong
-    case veryStrong
+public enum StrengthLevel: PasswordStrength {
+    case tooShort, veryWeak, weak, medium, strong, veryStrong
 }
 
-extension StrenghtType {
-    public var typeDescription: String {
+extension StrengthLevel {
+    public var description: String {
         switch self {
         case .tooShort:     return "Too Short"
         case .veryWeak:     return "Very Weak"
@@ -39,39 +29,44 @@ extension StrenghtType {
         }
     }
     
-    public var typeColor: UIColor {
+    public var color: UIColor {
         switch self {
         case .tooShort:   return .clear
-        case .veryWeak:   return UIColor(red: 244, green: 61, blue: 43, alpha: 1)
-        case .weak:       return UIColor(red: 249, green: 188, blue: 55, alpha: 1)
-        case .medium:     return UIColor(red: 202, green: 216, blue: 64, alpha: 1)
-        case .strong:     return UIColor(red: 133, green: 193, blue: 71, alpha: 1)
-        case .veryStrong: return UIColor(red: 85, green: 181, blue: 73, alpha: 1)
+        case .veryWeak:   return UIColor(red: 244/255,
+                                         green: 61/255,
+                                         blue: 43/255,
+                                         alpha: 1)
+        case .weak:       return UIColor(red: 249/255,
+                                         green: 188/255,
+                                         blue: 55/255,
+                                         alpha: 1)
+        case .medium:     return UIColor(red: 202/255,
+                                         green: 216/255,
+                                         blue: 64/255,
+                                         alpha: 1)
+        case .strong:     return UIColor(red: 133/255,
+                                         green: 193/255.0,
+                                         blue: 71/255,
+                                         alpha: 1)
+        case .veryStrong: return UIColor(red: 85/255,
+                                         green: 181/255,
+                                         blue: 73/255,
+                                         alpha: 1)
         }
     }
-
-    func customTypeDescription(_ tooShort: String,
-                     _ veryWeak: String,
-                     _ weak: String,
-                     _ medium: String,
-                     _ strong: String,
-                     _ veryStrong: String) -> String {
+    
+    func customTypeDescription(_ customDescriptions: [String]) -> String {
         switch self {
-        case .tooShort:     return tooShort
-        case .veryWeak:     return veryWeak
-        case .weak:         return weak
-        case .medium:       return medium
-        case .strong:       return strong
-        case .veryStrong:   return veryStrong
+        case .tooShort:     return customDescriptions[0]
+        case .veryWeak:     return customDescriptions[1]
+        case .weak:         return customDescriptions[2]
+        case .medium:       return customDescriptions[3]
+        case .strong:       return customDescriptions[4]
+        case .veryStrong:   return customDescriptions[5]
         }
     }
 }
 
-internal enum RegexType {
-    static let specialChar: String  = "!@#$%^&*()_+-=[]{}|;':\",./<>?\\"
-    static let numbers: String      = "^[0-9]+$"
-    static let onlyLetters: String  = "[^A-Za-zÀ-ÖØ-öø-ÿ]"
-    static let onlyNumber: String   = "^[0-9]"
-}
+
 
 

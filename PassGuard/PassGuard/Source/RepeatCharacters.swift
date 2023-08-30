@@ -1,6 +1,6 @@
 //
 //  RepeatCharacters.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/26/23.
 //

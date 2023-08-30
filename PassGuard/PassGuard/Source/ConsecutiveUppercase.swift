@@ -1,6 +1,6 @@
 //
 //  ConsecutiveUppercase.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/30/23.
 //

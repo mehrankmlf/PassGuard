@@ -1,6 +1,6 @@
 //
 //  MiddleNumberOrSymbol.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/24/23.
 //
@@ -33,7 +33,7 @@ internal struct MiddleNumberOrSymbol: EnvironmentRules {
         input.removeFirst()
         input.removeLast()
         
-        let specialCharacterSet = CharacterSet(charactersIn: RegexType.specialChar)
+        let specialCharacterSet = CharacterSet(charactersIn: RegexPattern.specialChar)
         let specialCharacterCount = input.filter { specialCharacterSet.contains($0.unicodeScalars.first!) }.count
         count += specialCharacterCount
         

@@ -1,6 +1,6 @@
 //
 //  LetterOnly.swift
-//  Example
+//  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/25/23.
 //
@@ -32,6 +32,6 @@ internal struct LetterOnly: EnvironmentRules {
     }
     
     private func onlyLettersChecker(_ password: String) -> Bool {
-        return password.range(of: RegexType.onlyLetters, options: .regularExpression) == nil
+        return password.range(of: RegexPattern.onlyLetters, options: .regularExpression) == nil
     }
 }

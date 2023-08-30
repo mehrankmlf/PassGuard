@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455BC9EB2A9F292500AE4BB4 /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */; };
 		4566A07F2A7E6837001EB39C /* PassGuard.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4566A07E2A7E6837001EB39C /* PassGuard.docc */; };
 		4566A0852A7E6838001EB39C /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566A07A2A7E6837001EB39C /* PassGuard.framework */; };
 		4566A08B2A7E6838001EB39C /* PassGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4566A07D2A7E6837001EB39C /* PassGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
 		4566A07A2A7E6837001EB39C /* PassGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PassGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566A07D2A7E6837001EB39C /* PassGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassGuard.h; sourceTree = "<group>"; };
 		4566A07E2A7E6837001EB39C /* PassGuard.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PassGuard.docc; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				4566A0B82A7E692D001EB39C /* GuardianParsType.swift */,
 				4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */,
 				45687CAF2A88C90B00A791A6 /* String + Extension.swift */,
+				455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */,
 				4516A8A82A8790F20001B551 /* AdditionalRules */,
 				4516A8A92A8791090001B551 /* DeductionsRules */,
 			);
@@ -356,6 +359,7 @@
 				4566A0B42A7E690B001EB39C /* SequentialLetter.swift in Sources */,
 				4566A0A02A7E68FA001EB39C /* LenghtMeterRule.swift in Sources */,
 				4566A0C72A7E692D001EB39C /* RulesManager.swift in Sources */,
+				455BC9EB2A9F292500AE4BB4 /* RegexPatterns.swift in Sources */,
 				4566A0B12A7E690B001EB39C /* SequentialSymbol.swift in Sources */,
 				45687CB02A88C90B00A791A6 /* String + Extension.swift in Sources */,
 				4566A0C82A7E692D001EB39C /* EnvironmentRules.swift in Sources */,
