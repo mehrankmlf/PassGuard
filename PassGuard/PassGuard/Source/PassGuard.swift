@@ -21,8 +21,13 @@ public class PassGuard {
     /// Gives the ability to use custom strenght description
     private var customDescription: [String]?
     
+    /// Gives the state tyoe base on score. .medium
+    public var strenghtType: StrengthLevel {
+        return strengthMeter() ?? .tooShort
+    }
+    
     /// Gives the score according to the input in order to use in progress view
-    public var score: Int {
+    public var strengthScore: Int {
         return totalScore() ?? 0
     }
     /// Gives the state description base on score. "Strong"

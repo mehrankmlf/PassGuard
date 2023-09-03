@@ -1,0 +1,11 @@
+framework module PassGuard {
+  umbrella header "PassGuard.h"
+
+  export *
+  module * { export * }
+}
+
+module PassGuard.Swift {
+  header "PassGuard-Swift.h"
+  requires objc
+}

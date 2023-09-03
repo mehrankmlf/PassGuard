@@ -35,12 +35,14 @@ extension RuleManagement: Manageable {
     /// - Returns: StrenghtType according to input password`.
     @discardableResult
     internal func score(_ password: String) -> Int {
-        var finalScore: Int = 0
+//        var finalScore: Int = 0
         
         // Calculate the addition and deduction scores for the password.
-        finalScore += self.additionsRules.scoreCalculatore(password)
-        finalScore -= self.deductionsRules.scoreCalculatore(password)
+        let additionsScore = self.additionsRules.scoreCalculatore(password)
+        let deductionsScore = self.deductionsRules.scoreCalculatore(password)
         
+        // Calculate the final score without exceeding 100 or going below 0.
+        let finalScore = max(0, min(100, additionsScore - deductionsScore))
         return finalScore
     }
     
@@ -52,13 +54,7 @@ extension RuleManagement: Manageable {
     /// - Returns: StrenghtType according to input password`.
     internal func strenghtMeter(_ score: Int) -> StrengthLevel {
         
-        /* The final score might get
-         beyond 100 scores base on
-         calculated scores.
-         */
-        let finalScore = max(0, min(100, score))
-        
-        switch finalScore {
+        switch score {
         case 0..<20:
             return .veryWeak
         case 20..<40:

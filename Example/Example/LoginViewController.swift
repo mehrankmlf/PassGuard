@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import PassGuard
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+final class LoginViewController: UIViewController, UITextFieldDelegate {
     
     enum Constant {
         static let cornerRadius: CGFloat = 10
@@ -39,10 +39,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //                                          "Super Strong", "Incredibly Strong"]
                 let passGuard = PassGuard(password: password)
 //                                          customDescription: customDescriptions)
-                self.lblState.text = passGuard.typeDescription
-                self.lblState.backgroundColor = passGuard.typeColor
+                self.lblState.text = passGuard.strengthDescription
+                self.lblState.backgroundColor = passGuard.strengthColor
+                self.progressView.progress = Float(passGuard.strengthScore) / 100
             }.store(in: &subscriber)
-        self.progressView.progress = 40.0
     }
         
     @IBAction func btnLogin_Clicked(_ sender: Any) {
@@ -54,6 +54,11 @@ extension LoginViewController {
     private func setupView() {
         self.lblState.layer.cornerRadius = 5
         self.lblState.layer.masksToBounds = true
+        self.progressView.progress = 0.0
+        self.txtUsername.attributedPlaceholder = NSAttributedString(string: "username",
+                                                                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        self.txtPassword.attributedPlaceholder = NSAttributedString(string: "password",
+                                                                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
         self.btnLogin.layer.cornerRadius = Constant.cornerRadius
         self.btnLogin.layer.borderColor = Constant.borderColor.cgColor
