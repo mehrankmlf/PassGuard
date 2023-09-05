@@ -33,7 +33,7 @@ final class RuleManagerTest: XCTestCase {
       XCTAssertEqual(sut.strenghtMeter(30), .weak)
       XCTAssertEqual(sut.strenghtMeter(60), .strong)
       XCTAssertEqual(sut.strenghtMeter(85), .veryStrong)
-      XCTAssertEqual(sut.strenghtMeter(101), .veryStrong)
-      XCTAssertEqual(sut.strenghtMeter(-10), .veryWeak)
+      XCTAssertEqual(sut.strenghtMeter(101), .tooShort)
+      XCTAssertEqual(sut.strenghtMeter(-10), .tooShort)
    }
 }
