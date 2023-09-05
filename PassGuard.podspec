@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "PassGuard"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "PassGuard is a password strength meter for iOS and OSX."
 
   spec.homepage     = "https://github.com/mehrankmlf/PassGuard"
