@@ -136,6 +136,7 @@
 				4566A0962A7E68F9001EB39C /* UniqueCharacterRule.swift */,
 			);
 			name = AdditionalRules;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4516A8A92A8791090001B551 /* DeductionsRules */ = {
@@ -152,6 +153,7 @@
 				4566A0A82A7E690B001EB39C /* SequentialSymbol.swift */,
 			);
 			name = DeductionsRules;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4566A0702A7E6837001EB39C = {
@@ -175,7 +177,19 @@
 		4566A07C2A7E6837001EB39C /* PassGuard */ = {
 			isa = PBXGroup;
 			children = (
-				4566A0B62A7E6923001EB39C /* Source */,
+				4566A0B92A7E692D001EB39C /* PassGuard.swift */,
+				4566A0BE2A7E692D001EB39C /* RulesManager.swift */,
+				4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */,
+				4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */,
+				4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */,
+				4566A0BC2A7E692D001EB39C /* Calculatable.swift */,
+				4566A0B72A7E692D001EB39C /* Manageable.swift */,
+				4566A0B82A7E692D001EB39C /* GuardianParsType.swift */,
+				4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */,
+				45687CAF2A88C90B00A791A6 /* String + Extension.swift */,
+				455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */,
+				4516A8A82A8790F20001B551 /* AdditionalRules */,
+				4516A8A92A8791090001B551 /* DeductionsRules */,
 				4566A07D2A7E6837001EB39C /* PassGuard.h */,
 				4566A07E2A7E6837001EB39C /* PassGuard.docc */,
 			);
@@ -192,26 +206,6 @@
 				45BE8E372A825C5E00C208E1 /* RuleManagerTest.swift */,
 			);
 			path = PassGuardTests;
-			sourceTree = "<group>";
-		};
-		4566A0B62A7E6923001EB39C /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				4566A0B92A7E692D001EB39C /* PassGuard.swift */,
-				4566A0BE2A7E692D001EB39C /* RulesManager.swift */,
-				4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */,
-				4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */,
-				4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */,
-				4566A0BC2A7E692D001EB39C /* Calculatable.swift */,
-				4566A0B72A7E692D001EB39C /* Manageable.swift */,
-				4566A0B82A7E692D001EB39C /* GuardianParsType.swift */,
-				4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */,
-				45687CAF2A88C90B00A791A6 /* String + Extension.swift */,
-				455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */,
-				4516A8A82A8790F20001B551 /* AdditionalRules */,
-				4516A8A92A8791090001B551 /* DeductionsRules */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		459375B32A7FACDD001A5E25 /* MockAdditionsRules */ = {

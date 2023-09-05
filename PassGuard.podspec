@@ -1,24 +1,20 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "PassGuard"
-  spec.version      = "1.0.1"
-  spec.summary      = "PassGuard is a password strength meter for iOS."
-  spec.description  = "PassGuard is a password strength meter for iOS."
+  spec.version      = "1.0.2"
+  spec.summary      = "PassGuard is a password strength meter for iOS and OSX."
 
   spec.homepage     = "https://github.com/mehrankmlf/PassGuard"
 
   spec.license      = "MIT"
-  spec.license      = { :type => "MIT", :file => "https://github.com/mehrankmlf/PassGuard/blob/master/LICENSE" }
 
-I spec.author             = { "“Mehran Kamalifard" => "mehran.kmlf@icloud.com" }
+  spec.author             = { "Mehran Kamalifard" => "mehran.kmlf@icloud.com" }
   spec.social_media_url   = "https://www.linkedin.com/in/mehran-kamalifard/"
 
   spec.platform     = :ios, "13.0"
 
   spec.ios.deployment_target = "13.0"
   spec.osx.deployment_target = "13.0"
-  spec.watchos.deployment_target = "13.0"
-  spec.tvos.deployment_target = "13.0"
 
   spec.source       = { :git => "https://github.com/mehrankmlf/PassGuard.git", :tag => spec.version.to_s }
 
