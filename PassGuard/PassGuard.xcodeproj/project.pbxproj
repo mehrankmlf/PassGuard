@@ -12,7 +12,7 @@
 		4566A0852A7E6838001EB39C /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566A07A2A7E6837001EB39C /* PassGuard.framework */; };
 		4566A08B2A7E6838001EB39C /* PassGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4566A07D2A7E6837001EB39C /* PassGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4566A0C02A7E692D001EB39C /* Manageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B72A7E692D001EB39C /* Manageable.swift */; };
-		4566A0C12A7E692D001EB39C /* GuardianParsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B82A7E692D001EB39C /* GuardianParsType.swift */; };
+		4566A0C12A7E692D001EB39C /* PassGuardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B82A7E692D001EB39C /* PassGuardType.swift */; };
 		4566A0C22A7E692D001EB39C /* PassGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B92A7E692D001EB39C /* PassGuard.swift */; };
 		4566A0C32A7E692D001EB39C /* AdditionsRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */; };
 		4566A0C42A7E692D001EB39C /* UITextfield + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */; };
@@ -67,7 +67,7 @@
 		4566A07E2A7E6837001EB39C /* PassGuard.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PassGuard.docc; sourceTree = "<group>"; };
 		4566A0842A7E6838001EB39C /* PassGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566A0B72A7E692D001EB39C /* Manageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manageable.swift; sourceTree = "<group>"; };
-		4566A0B82A7E692D001EB39C /* GuardianParsType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianParsType.swift; sourceTree = "<group>"; };
+		4566A0B82A7E692D001EB39C /* PassGuardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGuardType.swift; sourceTree = "<group>"; };
 		4566A0B92A7E692D001EB39C /* PassGuard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGuard.swift; sourceTree = "<group>"; };
 		4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionsRules.swift; sourceTree = "<group>"; };
 		4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextfield + Extension.swift"; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 				4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */,
 				4566A0BC2A7E692D001EB39C /* Calculatable.swift */,
 				4566A0B72A7E692D001EB39C /* Manageable.swift */,
-				4566A0B82A7E692D001EB39C /* GuardianParsType.swift */,
+				4566A0B82A7E692D001EB39C /* PassGuardType.swift */,
 				4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */,
 				45687CAF2A88C90B00A791A6 /* String + Extension.swift */,
 				455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */,
@@ -355,7 +355,7 @@
 				45687CB02A88C90B00A791A6 /* String + Extension.swift in Sources */,
 				4566A0C82A7E692D001EB39C /* EnvironmentRules.swift in Sources */,
 				45A541922AA70C9300A9F60A /* RepeatCharacters.swift in Sources */,
-				4566A0C12A7E692D001EB39C /* GuardianParsType.swift in Sources */,
+				4566A0C12A7E692D001EB39C /* PassGuardType.swift in Sources */,
 				45A541A02AA70D6700A9F60A /* LenghtMeterRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

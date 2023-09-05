@@ -1,5 +1,5 @@
 //
-//  GuardianParsType.swift
+//  PassGuardType.swift
 //  PassGuard
 //
 //  Created by Mehran Kamalifard on 7/4/23.

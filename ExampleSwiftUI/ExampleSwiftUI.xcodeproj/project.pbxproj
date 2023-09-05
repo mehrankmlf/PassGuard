@@ -10,12 +10,12 @@
 		45078E4C2AA46B460097318D /* RoundTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45078E4B2AA46B460097318D /* RoundTextFieldStyle.swift */; };
 		45078E4E2AA46B680097318D /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45078E4D2AA46B680097318D /* CustomButtonStyle.swift */; };
 		45078E522AA46DF10097318D /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45078E512AA46DF10097318D /* View + Extension.swift */; };
-		45078E552AA46E670097318D /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45078E532AA46E640097318D /* PassGuard.framework */; };
-		45078E562AA46E670097318D /* PassGuard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45078E532AA46E640097318D /* PassGuard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		452CA7F72AA31C0100CB82C7 /* ExampleSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CA7F62AA31C0100CB82C7 /* ExampleSwiftUIApp.swift */; };
 		452CA7F92AA31C0100CB82C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CA7F82AA31C0100CB82C7 /* ContentView.swift */; };
 		452CA7FB2AA31C0300CB82C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452CA7FA2AA31C0300CB82C7 /* Assets.xcassets */; };
 		452CA7FE2AA31C0300CB82C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452CA7FD2AA31C0300CB82C7 /* Preview Assets.xcassets */; };
+		455452F22AA7140E00D0510E /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455452EC2AA713A700D0510E /* PassGuard.framework */; };
+		455452F32AA7140E00D0510E /* PassGuard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 455452EC2AA713A700D0510E /* PassGuard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				45078E562AA46E670097318D /* PassGuard.framework in Embed Frameworks */,
+				455452F32AA7140E00D0510E /* PassGuard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,12 +36,12 @@
 		45078E4B2AA46B460097318D /* RoundTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextFieldStyle.swift; sourceTree = "<group>"; };
 		45078E4D2AA46B680097318D /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		45078E512AA46DF10097318D /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
-		45078E532AA46E640097318D /* PassGuard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassGuard.framework; sourceTree = "<group>"; };
 		452CA7F32AA31C0100CB82C7 /* ExampleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		452CA7F62AA31C0100CB82C7 /* ExampleSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSwiftUIApp.swift; sourceTree = "<group>"; };
 		452CA7F82AA31C0100CB82C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		452CA7FA2AA31C0300CB82C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		452CA7FD2AA31C0300CB82C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		455452EC2AA713A700D0510E /* PassGuard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassGuard.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45078E552AA46E670097318D /* PassGuard.framework in Frameworks */,
+				455452F22AA7140E00D0510E /* PassGuard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 				45078E4B2AA46B460097318D /* RoundTextFieldStyle.swift */,
 				45078E4D2AA46B680097318D /* CustomButtonStyle.swift */,
 				45078E512AA46DF10097318D /* View + Extension.swift */,
-				45078E532AA46E640097318D /* PassGuard.framework */,
+				455452EC2AA713A700D0510E /* PassGuard.framework */,
 				452CA7FA2AA31C0300CB82C7 /* Assets.xcassets */,
 				452CA7FC2AA31C0300CB82C7 /* Preview Content */,
 			);
