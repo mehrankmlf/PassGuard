@@ -7,241 +7,244 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		455BC9EB2A9F292500AE4BB4 /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */; };
-		4566A07F2A7E6837001EB39C /* PassGuard.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4566A07E2A7E6837001EB39C /* PassGuard.docc */; };
-		4566A0852A7E6838001EB39C /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566A07A2A7E6837001EB39C /* PassGuard.framework */; };
-		4566A08B2A7E6838001EB39C /* PassGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4566A07D2A7E6837001EB39C /* PassGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4566A0C02A7E692D001EB39C /* Manageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B72A7E692D001EB39C /* Manageable.swift */; };
-		4566A0C12A7E692D001EB39C /* PassGuardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B82A7E692D001EB39C /* PassGuardType.swift */; };
-		4566A0C22A7E692D001EB39C /* PassGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0B92A7E692D001EB39C /* PassGuard.swift */; };
-		4566A0C32A7E692D001EB39C /* AdditionsRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */; };
-		4566A0C42A7E692D001EB39C /* UITextfield + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */; };
-		4566A0C52A7E692D001EB39C /* Calculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BC2A7E692D001EB39C /* Calculatable.swift */; };
-		4566A0C62A7E692D001EB39C /* DeductionsManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */; };
-		4566A0C72A7E692D001EB39C /* RulesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BE2A7E692D001EB39C /* RulesManager.swift */; };
-		4566A0C82A7E692D001EB39C /* EnvironmentRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */; };
-		45687CB02A88C90B00A791A6 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45687CAF2A88C90B00A791A6 /* String + Extension.swift */; };
-		459375B22A7FAA79001A5E25 /* AditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B12A7FAA79001A5E25 /* AditionsTests.swift */; };
-		459375B52A7FB3BC001A5E25 /* DeductionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B42A7FB3BC001A5E25 /* DeductionsTests.swift */; };
-		459375B72A7FB717001A5E25 /* MockLenghtMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B62A7FB717001A5E25 /* MockLenghtMeter.swift */; };
-		459375B92A7FB76D001A5E25 /* MockContainsUpercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375B82A7FB76D001A5E25 /* MockContainsUpercase.swift */; };
-		459375BB2A7FB7C3001A5E25 /* MockContainsLowercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459375BA2A7FB7C3001A5E25 /* MockContainsLowercase.swift */; };
-		45A541812AA70BFF00A9F60A /* ContainsUppercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541802AA70BFF00A9F60A /* ContainsUppercase.swift */; };
-		45A541832AA70C0900A9F60A /* ContainsLowerase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541822AA70C0900A9F60A /* ContainsLowerase.swift */; };
-		45A541852AA70C0F00A9F60A /* ContainsNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541842AA70C0F00A9F60A /* ContainsNumbers.swift */; };
-		45A541872AA70C1F00A9F60A /* ContainsSpecialKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541862AA70C1E00A9F60A /* ContainsSpecialKeywords.swift */; };
-		45A541892AA70C2700A9F60A /* MiddleNumberOrSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541882AA70C2700A9F60A /* MiddleNumberOrSymbol.swift */; };
-		45A5418B2AA70C3600A9F60A /* UniqueCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5418A2AA70C3600A9F60A /* UniqueCharacterRule.swift */; };
-		45A5418E2AA70C7800A9F60A /* LetterOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5418D2AA70C7800A9F60A /* LetterOnly.swift */; };
-		45A541902AA70C8400A9F60A /* NumberOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5418F2AA70C8400A9F60A /* NumberOnly.swift */; };
-		45A541922AA70C9300A9F60A /* RepeatCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541912AA70C9300A9F60A /* RepeatCharacters.swift */; };
-		45A541942AA70CA000A9F60A /* ConsecutiveUppercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541932AA70CA000A9F60A /* ConsecutiveUppercase.swift */; };
-		45A541962AA70CA600A9F60A /* ConsecutiveLowercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541952AA70CA600A9F60A /* ConsecutiveLowercase.swift */; };
-		45A541982AA70CB000A9F60A /* ConsecutiveNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541972AA70CB000A9F60A /* ConsecutiveNumbers.swift */; };
-		45A5419C2AA70CBB00A9F60A /* SequentialSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A541992AA70CBB00A9F60A /* SequentialSymbol.swift */; };
-		45A5419D2AA70CBB00A9F60A /* SequentialLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5419A2AA70CBB00A9F60A /* SequentialLetter.swift */; };
-		45A5419E2AA70CBB00A9F60A /* SequentialNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5419B2AA70CBB00A9F60A /* SequentialNumber.swift */; };
-		45A541A02AA70D6700A9F60A /* LenghtMeterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5419F2AA70D6700A9F60A /* LenghtMeterRule.swift */; };
-		45BE8E2C2A82506B00C208E1 /* MockContainsNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E2B2A82506B00C208E1 /* MockContainsNumber.swift */; };
-		45BE8E2E2A82508A00C208E1 /* MockContainsSpecialKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E2D2A82508A00C208E1 /* MockContainsSpecialKeywords.swift */; };
-		45BE8E322A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E312A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift */; };
-		45BE8E342A8250C900C208E1 /* MockUniqueCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E332A8250C900C208E1 /* MockUniqueCharacterRule.swift */; };
-		45BE8E362A8253B100C208E1 /* AdditionalManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E352A8253B100C208E1 /* AdditionalManagerTest.swift */; };
-		45BE8E382A825C5E00C208E1 /* RuleManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE8E372A825C5E00C208E1 /* RuleManagerTest.swift */; };
+		45ACA1A92AA71EA20081CBD3 /* PassGuard.docc in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1A82AA71EA20081CBD3 /* PassGuard.docc */; };
+		45ACA1AF2AA71EA20081CBD3 /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ACA1A42AA71EA20081CBD3 /* PassGuard.framework */; };
+		45ACA1B42AA71EA20081CBD3 /* PassGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1B32AA71EA20081CBD3 /* PassGuardTests.swift */; };
+		45ACA1B52AA71EA20081CBD3 /* PassGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 45ACA1A72AA71EA20081CBD3 /* PassGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45ACA1CB2AA71F130081CBD3 /* Calculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C02AA71F130081CBD3 /* Calculatable.swift */; };
+		45ACA1CC2AA71F130081CBD3 /* RulesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C12AA71F130081CBD3 /* RulesManager.swift */; };
+		45ACA1CD2AA71F130081CBD3 /* AdditionsRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C22AA71F130081CBD3 /* AdditionsRules.swift */; };
+		45ACA1CE2AA71F130081CBD3 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C32AA71F130081CBD3 /* String + Extension.swift */; };
+		45ACA1CF2AA71F130081CBD3 /* DeductionsManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C42AA71F130081CBD3 /* DeductionsManagers.swift */; };
+		45ACA1D02AA71F130081CBD3 /* PassGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C52AA71F130081CBD3 /* PassGuard.swift */; };
+		45ACA1D12AA71F130081CBD3 /* Manageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C62AA71F130081CBD3 /* Manageable.swift */; };
+		45ACA1D22AA71F130081CBD3 /* PassGuardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C72AA71F130081CBD3 /* PassGuardType.swift */; };
+		45ACA1D32AA71F130081CBD3 /* EnvironmentRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C82AA71F130081CBD3 /* EnvironmentRules.swift */; };
+		45ACA1D42AA71F130081CBD3 /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1C92AA71F130081CBD3 /* RegexPatterns.swift */; };
+		45ACA1D52AA71F130081CBD3 /* UITextfield + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1CA2AA71F130081CBD3 /* UITextfield + Extension.swift */; };
+		45ACA1DD2AA71F1F0081CBD3 /* ContainsLowerase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1D62AA71F1E0081CBD3 /* ContainsLowerase.swift */; };
+		45ACA1DE2AA71F1F0081CBD3 /* MiddleNumberOrSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1D72AA71F1E0081CBD3 /* MiddleNumberOrSymbol.swift */; };
+		45ACA1DF2AA71F1F0081CBD3 /* ContainsUppercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1D82AA71F1E0081CBD3 /* ContainsUppercase.swift */; };
+		45ACA1E02AA71F1F0081CBD3 /* LenghtMeterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1D92AA71F1E0081CBD3 /* LenghtMeterRule.swift */; };
+		45ACA1E12AA71F1F0081CBD3 /* ContainsNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1DA2AA71F1F0081CBD3 /* ContainsNumbers.swift */; };
+		45ACA1E22AA71F1F0081CBD3 /* ContainsSpecialKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1DB2AA71F1F0081CBD3 /* ContainsSpecialKeywords.swift */; };
+		45ACA1E32AA71F1F0081CBD3 /* UniqueCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1DC2AA71F1F0081CBD3 /* UniqueCharacterRule.swift */; };
+		45ACA1ED2AA71F270081CBD3 /* NumberOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1E42AA71F260081CBD3 /* NumberOnly.swift */; };
+		45ACA1EE2AA71F270081CBD3 /* SequentialLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1E52AA71F260081CBD3 /* SequentialLetter.swift */; };
+		45ACA1EF2AA71F270081CBD3 /* ConsecutiveLowercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1E62AA71F260081CBD3 /* ConsecutiveLowercase.swift */; };
+		45ACA1F02AA71F270081CBD3 /* RepeatCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1E72AA71F260081CBD3 /* RepeatCharacters.swift */; };
+		45ACA1F12AA71F270081CBD3 /* ConsecutiveUppercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1E82AA71F260081CBD3 /* ConsecutiveUppercase.swift */; };
+		45ACA1F22AA71F270081CBD3 /* SequentialNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1E92AA71F270081CBD3 /* SequentialNumber.swift */; };
+		45ACA1F32AA71F270081CBD3 /* SequentialSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1EA2AA71F270081CBD3 /* SequentialSymbol.swift */; };
+		45ACA1F42AA71F270081CBD3 /* LetterOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1EB2AA71F270081CBD3 /* LetterOnly.swift */; };
+		45ACA1F52AA71F270081CBD3 /* ConsecutiveNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1EC2AA71F270081CBD3 /* ConsecutiveNumbers.swift */; };
+		45ACA1FA2AA71F440081CBD3 /* DeductionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1F62AA71F440081CBD3 /* DeductionsTests.swift */; };
+		45ACA1FB2AA71F440081CBD3 /* RuleManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1F72AA71F440081CBD3 /* RuleManagerTest.swift */; };
+		45ACA1FC2AA71F440081CBD3 /* AditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1F82AA71F440081CBD3 /* AditionsTests.swift */; };
+		45ACA1FD2AA71F440081CBD3 /* AdditionalManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1F92AA71F440081CBD3 /* AdditionalManagerTest.swift */; };
+		45ACA2062AA71F570081CBD3 /* MockUniqueCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA1FF2AA71F570081CBD3 /* MockUniqueCharacterRule.swift */; };
+		45ACA2072AA71F570081CBD3 /* MockContainsNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA2002AA71F570081CBD3 /* MockContainsNumber.swift */; };
+		45ACA2082AA71F570081CBD3 /* MockContainsSpecialKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA2012AA71F570081CBD3 /* MockContainsSpecialKeywords.swift */; };
+		45ACA2092AA71F570081CBD3 /* MockLenghtMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA2022AA71F570081CBD3 /* MockLenghtMeter.swift */; };
+		45ACA20A2AA71F570081CBD3 /* MockMiddleNumberOrSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA2032AA71F570081CBD3 /* MockMiddleNumberOrSymbol.swift */; };
+		45ACA20B2AA71F570081CBD3 /* MockContainsUpercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA2042AA71F570081CBD3 /* MockContainsUpercase.swift */; };
+		45ACA20C2AA71F570081CBD3 /* MockContainsLowercase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACA2052AA71F570081CBD3 /* MockContainsLowercase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4566A0862A7E6838001EB39C /* PBXContainerItemProxy */ = {
+		45ACA1B02AA71EA20081CBD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4566A0712A7E6837001EB39C /* Project object */;
+			containerPortal = 45ACA19B2AA71EA20081CBD3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4566A0792A7E6837001EB39C;
+			remoteGlobalIDString = 45ACA1A32AA71EA20081CBD3;
 			remoteInfo = PassGuard;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
-		4566A07A2A7E6837001EB39C /* PassGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PassGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4566A07D2A7E6837001EB39C /* PassGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassGuard.h; sourceTree = "<group>"; };
-		4566A07E2A7E6837001EB39C /* PassGuard.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PassGuard.docc; sourceTree = "<group>"; };
-		4566A0842A7E6838001EB39C /* PassGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4566A0B72A7E692D001EB39C /* Manageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manageable.swift; sourceTree = "<group>"; };
-		4566A0B82A7E692D001EB39C /* PassGuardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGuardType.swift; sourceTree = "<group>"; };
-		4566A0B92A7E692D001EB39C /* PassGuard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGuard.swift; sourceTree = "<group>"; };
-		4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionsRules.swift; sourceTree = "<group>"; };
-		4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextfield + Extension.swift"; sourceTree = "<group>"; };
-		4566A0BC2A7E692D001EB39C /* Calculatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculatable.swift; sourceTree = "<group>"; };
-		4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeductionsManagers.swift; sourceTree = "<group>"; };
-		4566A0BE2A7E692D001EB39C /* RulesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesManager.swift; sourceTree = "<group>"; };
-		4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentRules.swift; sourceTree = "<group>"; };
-		45687CAF2A88C90B00A791A6 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
-		459375B12A7FAA79001A5E25 /* AditionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AditionsTests.swift; sourceTree = "<group>"; };
-		459375B42A7FB3BC001A5E25 /* DeductionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionsTests.swift; sourceTree = "<group>"; };
-		459375B62A7FB717001A5E25 /* MockLenghtMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLenghtMeter.swift; sourceTree = "<group>"; };
-		459375B82A7FB76D001A5E25 /* MockContainsUpercase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContainsUpercase.swift; sourceTree = "<group>"; };
-		459375BA2A7FB7C3001A5E25 /* MockContainsLowercase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContainsLowercase.swift; sourceTree = "<group>"; };
-		45A541802AA70BFF00A9F60A /* ContainsUppercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsUppercase.swift; sourceTree = "<group>"; };
-		45A541822AA70C0900A9F60A /* ContainsLowerase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsLowerase.swift; sourceTree = "<group>"; };
-		45A541842AA70C0F00A9F60A /* ContainsNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsNumbers.swift; sourceTree = "<group>"; };
-		45A541862AA70C1E00A9F60A /* ContainsSpecialKeywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsSpecialKeywords.swift; sourceTree = "<group>"; };
-		45A541882AA70C2700A9F60A /* MiddleNumberOrSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleNumberOrSymbol.swift; sourceTree = "<group>"; };
-		45A5418A2AA70C3600A9F60A /* UniqueCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueCharacterRule.swift; sourceTree = "<group>"; };
-		45A5418D2AA70C7800A9F60A /* LetterOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterOnly.swift; sourceTree = "<group>"; };
-		45A5418F2AA70C8400A9F60A /* NumberOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOnly.swift; sourceTree = "<group>"; };
-		45A541912AA70C9300A9F60A /* RepeatCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatCharacters.swift; sourceTree = "<group>"; };
-		45A541932AA70CA000A9F60A /* ConsecutiveUppercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveUppercase.swift; sourceTree = "<group>"; };
-		45A541952AA70CA600A9F60A /* ConsecutiveLowercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveLowercase.swift; sourceTree = "<group>"; };
-		45A541972AA70CB000A9F60A /* ConsecutiveNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveNumbers.swift; sourceTree = "<group>"; };
-		45A541992AA70CBB00A9F60A /* SequentialSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialSymbol.swift; sourceTree = "<group>"; };
-		45A5419A2AA70CBB00A9F60A /* SequentialLetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialLetter.swift; sourceTree = "<group>"; };
-		45A5419B2AA70CBB00A9F60A /* SequentialNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialNumber.swift; sourceTree = "<group>"; };
-		45A5419F2AA70D6700A9F60A /* LenghtMeterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LenghtMeterRule.swift; sourceTree = "<group>"; };
-		45BE8E2B2A82506B00C208E1 /* MockContainsNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContainsNumber.swift; sourceTree = "<group>"; };
-		45BE8E2D2A82508A00C208E1 /* MockContainsSpecialKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContainsSpecialKeywords.swift; sourceTree = "<group>"; };
-		45BE8E312A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMiddleNumberOrSymbol.swift; sourceTree = "<group>"; };
-		45BE8E332A8250C900C208E1 /* MockUniqueCharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUniqueCharacterRule.swift; sourceTree = "<group>"; };
-		45BE8E352A8253B100C208E1 /* AdditionalManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalManagerTest.swift; sourceTree = "<group>"; };
-		45BE8E372A825C5E00C208E1 /* RuleManagerTest.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = RuleManagerTest.swift; sourceTree = "<group>"; };
+		45ACA1A42AA71EA20081CBD3 /* PassGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PassGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ACA1A72AA71EA20081CBD3 /* PassGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassGuard.h; sourceTree = "<group>"; };
+		45ACA1A82AA71EA20081CBD3 /* PassGuard.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PassGuard.docc; sourceTree = "<group>"; };
+		45ACA1AE2AA71EA20081CBD3 /* PassGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ACA1B32AA71EA20081CBD3 /* PassGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGuardTests.swift; sourceTree = "<group>"; };
+		45ACA1C02AA71F130081CBD3 /* Calculatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculatable.swift; sourceTree = "<group>"; };
+		45ACA1C12AA71F130081CBD3 /* RulesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesManager.swift; sourceTree = "<group>"; };
+		45ACA1C22AA71F130081CBD3 /* AdditionsRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionsRules.swift; sourceTree = "<group>"; };
+		45ACA1C32AA71F130081CBD3 /* String + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		45ACA1C42AA71F130081CBD3 /* DeductionsManagers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeductionsManagers.swift; sourceTree = "<group>"; };
+		45ACA1C52AA71F130081CBD3 /* PassGuard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGuard.swift; sourceTree = "<group>"; };
+		45ACA1C62AA71F130081CBD3 /* Manageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manageable.swift; sourceTree = "<group>"; };
+		45ACA1C72AA71F130081CBD3 /* PassGuardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGuardType.swift; sourceTree = "<group>"; };
+		45ACA1C82AA71F130081CBD3 /* EnvironmentRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentRules.swift; sourceTree = "<group>"; };
+		45ACA1C92AA71F130081CBD3 /* RegexPatterns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
+		45ACA1CA2AA71F130081CBD3 /* UITextfield + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextfield + Extension.swift"; sourceTree = "<group>"; };
+		45ACA1D62AA71F1E0081CBD3 /* ContainsLowerase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsLowerase.swift; sourceTree = "<group>"; };
+		45ACA1D72AA71F1E0081CBD3 /* MiddleNumberOrSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleNumberOrSymbol.swift; sourceTree = "<group>"; };
+		45ACA1D82AA71F1E0081CBD3 /* ContainsUppercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsUppercase.swift; sourceTree = "<group>"; };
+		45ACA1D92AA71F1E0081CBD3 /* LenghtMeterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LenghtMeterRule.swift; sourceTree = "<group>"; };
+		45ACA1DA2AA71F1F0081CBD3 /* ContainsNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsNumbers.swift; sourceTree = "<group>"; };
+		45ACA1DB2AA71F1F0081CBD3 /* ContainsSpecialKeywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainsSpecialKeywords.swift; sourceTree = "<group>"; };
+		45ACA1DC2AA71F1F0081CBD3 /* UniqueCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueCharacterRule.swift; sourceTree = "<group>"; };
+		45ACA1E42AA71F260081CBD3 /* NumberOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOnly.swift; sourceTree = "<group>"; };
+		45ACA1E52AA71F260081CBD3 /* SequentialLetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialLetter.swift; sourceTree = "<group>"; };
+		45ACA1E62AA71F260081CBD3 /* ConsecutiveLowercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveLowercase.swift; sourceTree = "<group>"; };
+		45ACA1E72AA71F260081CBD3 /* RepeatCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatCharacters.swift; sourceTree = "<group>"; };
+		45ACA1E82AA71F260081CBD3 /* ConsecutiveUppercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveUppercase.swift; sourceTree = "<group>"; };
+		45ACA1E92AA71F270081CBD3 /* SequentialNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialNumber.swift; sourceTree = "<group>"; };
+		45ACA1EA2AA71F270081CBD3 /* SequentialSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialSymbol.swift; sourceTree = "<group>"; };
+		45ACA1EB2AA71F270081CBD3 /* LetterOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterOnly.swift; sourceTree = "<group>"; };
+		45ACA1EC2AA71F270081CBD3 /* ConsecutiveNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsecutiveNumbers.swift; sourceTree = "<group>"; };
+		45ACA1F62AA71F440081CBD3 /* DeductionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeductionsTests.swift; sourceTree = "<group>"; };
+		45ACA1F72AA71F440081CBD3 /* RuleManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleManagerTest.swift; sourceTree = "<group>"; };
+		45ACA1F82AA71F440081CBD3 /* AditionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AditionsTests.swift; sourceTree = "<group>"; };
+		45ACA1F92AA71F440081CBD3 /* AdditionalManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalManagerTest.swift; sourceTree = "<group>"; };
+		45ACA1FF2AA71F570081CBD3 /* MockUniqueCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUniqueCharacterRule.swift; sourceTree = "<group>"; };
+		45ACA2002AA71F570081CBD3 /* MockContainsNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockContainsNumber.swift; sourceTree = "<group>"; };
+		45ACA2012AA71F570081CBD3 /* MockContainsSpecialKeywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockContainsSpecialKeywords.swift; sourceTree = "<group>"; };
+		45ACA2022AA71F570081CBD3 /* MockLenghtMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLenghtMeter.swift; sourceTree = "<group>"; };
+		45ACA2032AA71F570081CBD3 /* MockMiddleNumberOrSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMiddleNumberOrSymbol.swift; sourceTree = "<group>"; };
+		45ACA2042AA71F570081CBD3 /* MockContainsUpercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockContainsUpercase.swift; sourceTree = "<group>"; };
+		45ACA2052AA71F570081CBD3 /* MockContainsLowercase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockContainsLowercase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4566A0772A7E6837001EB39C /* Frameworks */ = {
+		45ACA1A12AA71EA20081CBD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4566A0812A7E6838001EB39C /* Frameworks */ = {
+		45ACA1AB2AA71EA20081CBD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4566A0852A7E6838001EB39C /* PassGuard.framework in Frameworks */,
+				45ACA1AF2AA71EA20081CBD3 /* PassGuard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4566A0702A7E6837001EB39C = {
+		45ACA19A2AA71EA20081CBD3 = {
 			isa = PBXGroup;
 			children = (
-				4566A07C2A7E6837001EB39C /* PassGuard */,
-				4566A0882A7E6838001EB39C /* PassGuardTests */,
-				4566A07B2A7E6837001EB39C /* Products */,
+				45ACA1A62AA71EA20081CBD3 /* PassGuard */,
+				45ACA1B22AA71EA20081CBD3 /* PassGuardTests */,
+				45ACA1A52AA71EA20081CBD3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4566A07B2A7E6837001EB39C /* Products */ = {
+		45ACA1A52AA71EA20081CBD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4566A07A2A7E6837001EB39C /* PassGuard.framework */,
-				4566A0842A7E6838001EB39C /* PassGuardTests.xctest */,
+				45ACA1A42AA71EA20081CBD3 /* PassGuard.framework */,
+				45ACA1AE2AA71EA20081CBD3 /* PassGuardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4566A07C2A7E6837001EB39C /* PassGuard */ = {
+		45ACA1A62AA71EA20081CBD3 /* PassGuard */ = {
 			isa = PBXGroup;
 			children = (
-				4566A0B92A7E692D001EB39C /* PassGuard.swift */,
-				4566A0BE2A7E692D001EB39C /* RulesManager.swift */,
-				4566A0BA2A7E692D001EB39C /* AdditionsRules.swift */,
-				4566A0BD2A7E692D001EB39C /* DeductionsManagers.swift */,
-				4566A0BF2A7E692D001EB39C /* EnvironmentRules.swift */,
-				4566A0BC2A7E692D001EB39C /* Calculatable.swift */,
-				4566A0B72A7E692D001EB39C /* Manageable.swift */,
-				4566A0B82A7E692D001EB39C /* PassGuardType.swift */,
-				4566A0BB2A7E692D001EB39C /* UITextfield + Extension.swift */,
-				45687CAF2A88C90B00A791A6 /* String + Extension.swift */,
-				455BC9EA2A9F292500AE4BB4 /* RegexPatterns.swift */,
-				45A5418C2AA70C4400A9F60A /* DeductionsRules */,
-				45A5417D2AA70B6100A9F60A /* AdditionalRules */,
-				4566A07D2A7E6837001EB39C /* PassGuard.h */,
-				4566A07E2A7E6837001EB39C /* PassGuard.docc */,
+				45ACA1C22AA71F130081CBD3 /* AdditionsRules.swift */,
+				45ACA1C02AA71F130081CBD3 /* Calculatable.swift */,
+				45ACA1C42AA71F130081CBD3 /* DeductionsManagers.swift */,
+				45ACA1C82AA71F130081CBD3 /* EnvironmentRules.swift */,
+				45ACA1C62AA71F130081CBD3 /* Manageable.swift */,
+				45ACA1C52AA71F130081CBD3 /* PassGuard.swift */,
+				45ACA1C72AA71F130081CBD3 /* PassGuardType.swift */,
+				45ACA1C92AA71F130081CBD3 /* RegexPatterns.swift */,
+				45ACA1C12AA71F130081CBD3 /* RulesManager.swift */,
+				45ACA1C32AA71F130081CBD3 /* String + Extension.swift */,
+				45ACA1CA2AA71F130081CBD3 /* UITextfield + Extension.swift */,
+				45ACA1BF2AA71EF10081CBD3 /* AdditionalRules */,
+				45ACA1BE2AA71EEC0081CBD3 /* DeductionsRules */,
+				45ACA1A72AA71EA20081CBD3 /* PassGuard.h */,
+				45ACA1A82AA71EA20081CBD3 /* PassGuard.docc */,
 			);
 			path = PassGuard;
 			sourceTree = "<group>";
 		};
-		4566A0882A7E6838001EB39C /* PassGuardTests */ = {
+		45ACA1B22AA71EA20081CBD3 /* PassGuardTests */ = {
 			isa = PBXGroup;
 			children = (
-				459375B32A7FACDD001A5E25 /* MockAdditionsRules */,
-				459375B12A7FAA79001A5E25 /* AditionsTests.swift */,
-				459375B42A7FB3BC001A5E25 /* DeductionsTests.swift */,
-				45BE8E352A8253B100C208E1 /* AdditionalManagerTest.swift */,
-				45BE8E372A825C5E00C208E1 /* RuleManagerTest.swift */,
+				45ACA1FE2AA71F4A0081CBD3 /* Mock */,
+				45ACA1B32AA71EA20081CBD3 /* PassGuardTests.swift */,
+				45ACA1F92AA71F440081CBD3 /* AdditionalManagerTest.swift */,
+				45ACA1F82AA71F440081CBD3 /* AditionsTests.swift */,
+				45ACA1F62AA71F440081CBD3 /* DeductionsTests.swift */,
+				45ACA1F72AA71F440081CBD3 /* RuleManagerTest.swift */,
 			);
 			path = PassGuardTests;
 			sourceTree = "<group>";
 		};
-		459375B32A7FACDD001A5E25 /* MockAdditionsRules */ = {
+		45ACA1BE2AA71EEC0081CBD3 /* DeductionsRules */ = {
 			isa = PBXGroup;
 			children = (
-				459375B62A7FB717001A5E25 /* MockLenghtMeter.swift */,
-				459375B82A7FB76D001A5E25 /* MockContainsUpercase.swift */,
-				459375BA2A7FB7C3001A5E25 /* MockContainsLowercase.swift */,
-				45BE8E2B2A82506B00C208E1 /* MockContainsNumber.swift */,
-				45BE8E2D2A82508A00C208E1 /* MockContainsSpecialKeywords.swift */,
-				45BE8E312A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift */,
-				45BE8E332A8250C900C208E1 /* MockUniqueCharacterRule.swift */,
+				45ACA1E62AA71F260081CBD3 /* ConsecutiveLowercase.swift */,
+				45ACA1EC2AA71F270081CBD3 /* ConsecutiveNumbers.swift */,
+				45ACA1E82AA71F260081CBD3 /* ConsecutiveUppercase.swift */,
+				45ACA1EB2AA71F270081CBD3 /* LetterOnly.swift */,
+				45ACA1E42AA71F260081CBD3 /* NumberOnly.swift */,
+				45ACA1E72AA71F260081CBD3 /* RepeatCharacters.swift */,
+				45ACA1E52AA71F260081CBD3 /* SequentialLetter.swift */,
+				45ACA1E92AA71F270081CBD3 /* SequentialNumber.swift */,
+				45ACA1EA2AA71F270081CBD3 /* SequentialSymbol.swift */,
 			);
-			path = MockAdditionsRules;
+			name = DeductionsRules;
 			sourceTree = "<group>";
 		};
-		45A5417D2AA70B6100A9F60A /* AdditionalRules */ = {
+		45ACA1BF2AA71EF10081CBD3 /* AdditionalRules */ = {
 			isa = PBXGroup;
 			children = (
-				45A5419F2AA70D6700A9F60A /* LenghtMeterRule.swift */,
-				45A541802AA70BFF00A9F60A /* ContainsUppercase.swift */,
-				45A541822AA70C0900A9F60A /* ContainsLowerase.swift */,
-				45A541842AA70C0F00A9F60A /* ContainsNumbers.swift */,
-				45A541862AA70C1E00A9F60A /* ContainsSpecialKeywords.swift */,
-				45A541882AA70C2700A9F60A /* MiddleNumberOrSymbol.swift */,
-				45A5418A2AA70C3600A9F60A /* UniqueCharacterRule.swift */,
+				45ACA1D62AA71F1E0081CBD3 /* ContainsLowerase.swift */,
+				45ACA1DA2AA71F1F0081CBD3 /* ContainsNumbers.swift */,
+				45ACA1DB2AA71F1F0081CBD3 /* ContainsSpecialKeywords.swift */,
+				45ACA1D82AA71F1E0081CBD3 /* ContainsUppercase.swift */,
+				45ACA1D92AA71F1E0081CBD3 /* LenghtMeterRule.swift */,
+				45ACA1D72AA71F1E0081CBD3 /* MiddleNumberOrSymbol.swift */,
+				45ACA1DC2AA71F1F0081CBD3 /* UniqueCharacterRule.swift */,
 			);
 			name = AdditionalRules;
 			sourceTree = "<group>";
 		};
-		45A5418C2AA70C4400A9F60A /* DeductionsRules */ = {
+		45ACA1FE2AA71F4A0081CBD3 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				45A5418D2AA70C7800A9F60A /* LetterOnly.swift */,
-				45A5418F2AA70C8400A9F60A /* NumberOnly.swift */,
-				45A541912AA70C9300A9F60A /* RepeatCharacters.swift */,
-				45A541932AA70CA000A9F60A /* ConsecutiveUppercase.swift */,
-				45A541952AA70CA600A9F60A /* ConsecutiveLowercase.swift */,
-				45A541972AA70CB000A9F60A /* ConsecutiveNumbers.swift */,
-				45A5419A2AA70CBB00A9F60A /* SequentialLetter.swift */,
-				45A5419B2AA70CBB00A9F60A /* SequentialNumber.swift */,
-				45A541992AA70CBB00A9F60A /* SequentialSymbol.swift */,
+				45ACA2052AA71F570081CBD3 /* MockContainsLowercase.swift */,
+				45ACA2002AA71F570081CBD3 /* MockContainsNumber.swift */,
+				45ACA2012AA71F570081CBD3 /* MockContainsSpecialKeywords.swift */,
+				45ACA2042AA71F570081CBD3 /* MockContainsUpercase.swift */,
+				45ACA2022AA71F570081CBD3 /* MockLenghtMeter.swift */,
+				45ACA2032AA71F570081CBD3 /* MockMiddleNumberOrSymbol.swift */,
+				45ACA1FF2AA71F570081CBD3 /* MockUniqueCharacterRule.swift */,
 			);
-			name = DeductionsRules;
+			name = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4566A0752A7E6837001EB39C /* Headers */ = {
+		45ACA19F2AA71EA20081CBD3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4566A08B2A7E6838001EB39C /* PassGuard.h in Headers */,
+				45ACA1B52AA71EA20081CBD3 /* PassGuard.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4566A0792A7E6837001EB39C /* PassGuard */ = {
+		45ACA1A32AA71EA20081CBD3 /* PassGuard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4566A08E2A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuard" */;
+			buildConfigurationList = 45ACA1B82AA71EA20081CBD3 /* Build configuration list for PBXNativeTarget "PassGuard" */;
 			buildPhases = (
-				4566A0752A7E6837001EB39C /* Headers */,
-				4566A0762A7E6837001EB39C /* Sources */,
-				4566A0772A7E6837001EB39C /* Frameworks */,
-				4566A0782A7E6837001EB39C /* Resources */,
+				45ACA19F2AA71EA20081CBD3 /* Headers */,
+				45ACA1A02AA71EA20081CBD3 /* Sources */,
+				45ACA1A12AA71EA20081CBD3 /* Frameworks */,
+				45ACA1A22AA71EA20081CBD3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -249,46 +252,46 @@
 			);
 			name = PassGuard;
 			productName = PassGuard;
-			productReference = 4566A07A2A7E6837001EB39C /* PassGuard.framework */;
+			productReference = 45ACA1A42AA71EA20081CBD3 /* PassGuard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4566A0832A7E6838001EB39C /* PassGuardTests */ = {
+		45ACA1AD2AA71EA20081CBD3 /* PassGuardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4566A0912A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuardTests" */;
+			buildConfigurationList = 45ACA1BB2AA71EA20081CBD3 /* Build configuration list for PBXNativeTarget "PassGuardTests" */;
 			buildPhases = (
-				4566A0802A7E6838001EB39C /* Sources */,
-				4566A0812A7E6838001EB39C /* Frameworks */,
-				4566A0822A7E6838001EB39C /* Resources */,
+				45ACA1AA2AA71EA20081CBD3 /* Sources */,
+				45ACA1AB2AA71EA20081CBD3 /* Frameworks */,
+				45ACA1AC2AA71EA20081CBD3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4566A0872A7E6838001EB39C /* PBXTargetDependency */,
+				45ACA1B12AA71EA20081CBD3 /* PBXTargetDependency */,
 			);
 			name = PassGuardTests;
 			productName = PassGuardTests;
-			productReference = 4566A0842A7E6838001EB39C /* PassGuardTests.xctest */;
+			productReference = 45ACA1AE2AA71EA20081CBD3 /* PassGuardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4566A0712A7E6837001EB39C /* Project object */ = {
+		45ACA19B2AA71EA20081CBD3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					4566A0792A7E6837001EB39C = {
+					45ACA1A32AA71EA20081CBD3 = {
 						CreatedOnToolsVersion = 14.3;
 					};
-					4566A0832A7E6838001EB39C = {
+					45ACA1AD2AA71EA20081CBD3 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 4566A0742A7E6837001EB39C /* Build configuration list for PBXProject "PassGuard" */;
+			buildConfigurationList = 45ACA19E2AA71EA20081CBD3 /* Build configuration list for PBXProject "PassGuard" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -296,26 +299,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 4566A0702A7E6837001EB39C;
-			productRefGroup = 4566A07B2A7E6837001EB39C /* Products */;
+			mainGroup = 45ACA19A2AA71EA20081CBD3;
+			productRefGroup = 45ACA1A52AA71EA20081CBD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4566A0792A7E6837001EB39C /* PassGuard */,
-				4566A0832A7E6838001EB39C /* PassGuardTests */,
+				45ACA1A32AA71EA20081CBD3 /* PassGuard */,
+				45ACA1AD2AA71EA20081CBD3 /* PassGuardTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4566A0782A7E6837001EB39C /* Resources */ = {
+		45ACA1A22AA71EA20081CBD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4566A0822A7E6838001EB39C /* Resources */ = {
+		45ACA1AC2AA71EA20081CBD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,71 +328,72 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4566A0762A7E6837001EB39C /* Sources */ = {
+		45ACA1A02AA71EA20081CBD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4566A0C22A7E692D001EB39C /* PassGuard.swift in Sources */,
-				4566A0C62A7E692D001EB39C /* DeductionsManagers.swift in Sources */,
-				4566A0C42A7E692D001EB39C /* UITextfield + Extension.swift in Sources */,
-				45A541942AA70CA000A9F60A /* ConsecutiveUppercase.swift in Sources */,
-				45A541982AA70CB000A9F60A /* ConsecutiveNumbers.swift in Sources */,
-				45A541832AA70C0900A9F60A /* ContainsLowerase.swift in Sources */,
-				4566A0C32A7E692D001EB39C /* AdditionsRules.swift in Sources */,
-				45A5418B2AA70C3600A9F60A /* UniqueCharacterRule.swift in Sources */,
-				45A541852AA70C0F00A9F60A /* ContainsNumbers.swift in Sources */,
-				4566A0C02A7E692D001EB39C /* Manageable.swift in Sources */,
-				45A541902AA70C8400A9F60A /* NumberOnly.swift in Sources */,
-				45A541872AA70C1F00A9F60A /* ContainsSpecialKeywords.swift in Sources */,
-				45A541892AA70C2700A9F60A /* MiddleNumberOrSymbol.swift in Sources */,
-				4566A07F2A7E6837001EB39C /* PassGuard.docc in Sources */,
-				4566A0C52A7E692D001EB39C /* Calculatable.swift in Sources */,
-				45A5419D2AA70CBB00A9F60A /* SequentialLetter.swift in Sources */,
-				4566A0C72A7E692D001EB39C /* RulesManager.swift in Sources */,
-				455BC9EB2A9F292500AE4BB4 /* RegexPatterns.swift in Sources */,
-				45A541962AA70CA600A9F60A /* ConsecutiveLowercase.swift in Sources */,
-				45A5419E2AA70CBB00A9F60A /* SequentialNumber.swift in Sources */,
-				45A5418E2AA70C7800A9F60A /* LetterOnly.swift in Sources */,
-				45A541812AA70BFF00A9F60A /* ContainsUppercase.swift in Sources */,
-				45A5419C2AA70CBB00A9F60A /* SequentialSymbol.swift in Sources */,
-				45687CB02A88C90B00A791A6 /* String + Extension.swift in Sources */,
-				4566A0C82A7E692D001EB39C /* EnvironmentRules.swift in Sources */,
-				45A541922AA70C9300A9F60A /* RepeatCharacters.swift in Sources */,
-				4566A0C12A7E692D001EB39C /* PassGuardType.swift in Sources */,
-				45A541A02AA70D6700A9F60A /* LenghtMeterRule.swift in Sources */,
+				45ACA1EE2AA71F270081CBD3 /* SequentialLetter.swift in Sources */,
+				45ACA1D42AA71F130081CBD3 /* RegexPatterns.swift in Sources */,
+				45ACA1D12AA71F130081CBD3 /* Manageable.swift in Sources */,
+				45ACA1ED2AA71F270081CBD3 /* NumberOnly.swift in Sources */,
+				45ACA1CB2AA71F130081CBD3 /* Calculatable.swift in Sources */,
+				45ACA1F12AA71F270081CBD3 /* ConsecutiveUppercase.swift in Sources */,
+				45ACA1D52AA71F130081CBD3 /* UITextfield + Extension.swift in Sources */,
+				45ACA1E32AA71F1F0081CBD3 /* UniqueCharacterRule.swift in Sources */,
+				45ACA1F22AA71F270081CBD3 /* SequentialNumber.swift in Sources */,
+				45ACA1DD2AA71F1F0081CBD3 /* ContainsLowerase.swift in Sources */,
+				45ACA1D02AA71F130081CBD3 /* PassGuard.swift in Sources */,
+				45ACA1CD2AA71F130081CBD3 /* AdditionsRules.swift in Sources */,
+				45ACA1E02AA71F1F0081CBD3 /* LenghtMeterRule.swift in Sources */,
+				45ACA1CE2AA71F130081CBD3 /* String + Extension.swift in Sources */,
+				45ACA1E12AA71F1F0081CBD3 /* ContainsNumbers.swift in Sources */,
+				45ACA1CF2AA71F130081CBD3 /* DeductionsManagers.swift in Sources */,
+				45ACA1EF2AA71F270081CBD3 /* ConsecutiveLowercase.swift in Sources */,
+				45ACA1CC2AA71F130081CBD3 /* RulesManager.swift in Sources */,
+				45ACA1F02AA71F270081CBD3 /* RepeatCharacters.swift in Sources */,
+				45ACA1E22AA71F1F0081CBD3 /* ContainsSpecialKeywords.swift in Sources */,
+				45ACA1DF2AA71F1F0081CBD3 /* ContainsUppercase.swift in Sources */,
+				45ACA1D22AA71F130081CBD3 /* PassGuardType.swift in Sources */,
+				45ACA1A92AA71EA20081CBD3 /* PassGuard.docc in Sources */,
+				45ACA1F42AA71F270081CBD3 /* LetterOnly.swift in Sources */,
+				45ACA1DE2AA71F1F0081CBD3 /* MiddleNumberOrSymbol.swift in Sources */,
+				45ACA1F32AA71F270081CBD3 /* SequentialSymbol.swift in Sources */,
+				45ACA1D32AA71F130081CBD3 /* EnvironmentRules.swift in Sources */,
+				45ACA1F52AA71F270081CBD3 /* ConsecutiveNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4566A0802A7E6838001EB39C /* Sources */ = {
+		45ACA1AA2AA71EA20081CBD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45BE8E2E2A82508A00C208E1 /* MockContainsSpecialKeywords.swift in Sources */,
-				459375B22A7FAA79001A5E25 /* AditionsTests.swift in Sources */,
-				45BE8E382A825C5E00C208E1 /* RuleManagerTest.swift in Sources */,
-				45BE8E342A8250C900C208E1 /* MockUniqueCharacterRule.swift in Sources */,
-				45BE8E322A8250B400C208E1 /* MockMiddleNumberOrSymbol.swift in Sources */,
-				459375B72A7FB717001A5E25 /* MockLenghtMeter.swift in Sources */,
-				459375B52A7FB3BC001A5E25 /* DeductionsTests.swift in Sources */,
-				45BE8E2C2A82506B00C208E1 /* MockContainsNumber.swift in Sources */,
-				459375BB2A7FB7C3001A5E25 /* MockContainsLowercase.swift in Sources */,
-				45BE8E362A8253B100C208E1 /* AdditionalManagerTest.swift in Sources */,
-				459375B92A7FB76D001A5E25 /* MockContainsUpercase.swift in Sources */,
+				45ACA1FC2AA71F440081CBD3 /* AditionsTests.swift in Sources */,
+				45ACA2092AA71F570081CBD3 /* MockLenghtMeter.swift in Sources */,
+				45ACA2072AA71F570081CBD3 /* MockContainsNumber.swift in Sources */,
+				45ACA2082AA71F570081CBD3 /* MockContainsSpecialKeywords.swift in Sources */,
+				45ACA1FB2AA71F440081CBD3 /* RuleManagerTest.swift in Sources */,
+				45ACA2062AA71F570081CBD3 /* MockUniqueCharacterRule.swift in Sources */,
+				45ACA1B42AA71EA20081CBD3 /* PassGuardTests.swift in Sources */,
+				45ACA1FD2AA71F440081CBD3 /* AdditionalManagerTest.swift in Sources */,
+				45ACA20C2AA71F570081CBD3 /* MockContainsLowercase.swift in Sources */,
+				45ACA20B2AA71F570081CBD3 /* MockContainsUpercase.swift in Sources */,
+				45ACA20A2AA71F570081CBD3 /* MockMiddleNumberOrSymbol.swift in Sources */,
+				45ACA1FA2AA71F440081CBD3 /* DeductionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4566A0872A7E6838001EB39C /* PBXTargetDependency */ = {
+		45ACA1B12AA71EA20081CBD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4566A0792A7E6837001EB39C /* PassGuard */;
-			targetProxy = 4566A0862A7E6838001EB39C /* PBXContainerItemProxy */;
+			target = 45ACA1A32AA71EA20081CBD3 /* PassGuard */;
+			targetProxy = 45ACA1B02AA71EA20081CBD3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4566A08C2A7E6838001EB39C /* Debug */ = {
+		45ACA1B62AA71EA20081CBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -452,7 +456,7 @@
 			};
 			name = Debug;
 		};
-		4566A08D2A7E6838001EB39C /* Release */ = {
+		45ACA1B72AA71EA20081CBD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -509,7 +513,7 @@
 			};
 			name = Release;
 		};
-		4566A08F2A7E6838001EB39C /* Debug */ = {
+		45ACA1B92AA71EA20081CBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -523,7 +527,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +547,7 @@
 			};
 			name = Debug;
 		};
-		4566A0902A7E6838001EB39C /* Release */ = {
+		45ACA1BA2AA71EA20081CBD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -558,7 +561,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +581,7 @@
 			};
 			name = Release;
 		};
-		4566A0922A7E6838001EB39C /* Debug */ = {
+		45ACA1BC2AA71EA20081CBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -590,16 +592,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.PassGuardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4566A0932A7E6838001EB39C /* Release */ = {
+		45ACA1BD2AA71EA20081CBD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -610,9 +609,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.PassGuardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,34 +618,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4566A0742A7E6837001EB39C /* Build configuration list for PBXProject "PassGuard" */ = {
+		45ACA19E2AA71EA20081CBD3 /* Build configuration list for PBXProject "PassGuard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4566A08C2A7E6838001EB39C /* Debug */,
-				4566A08D2A7E6838001EB39C /* Release */,
+				45ACA1B62AA71EA20081CBD3 /* Debug */,
+				45ACA1B72AA71EA20081CBD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4566A08E2A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuard" */ = {
+		45ACA1B82AA71EA20081CBD3 /* Build configuration list for PBXNativeTarget "PassGuard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4566A08F2A7E6838001EB39C /* Debug */,
-				4566A0902A7E6838001EB39C /* Release */,
+				45ACA1B92AA71EA20081CBD3 /* Debug */,
+				45ACA1BA2AA71EA20081CBD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4566A0912A7E6838001EB39C /* Build configuration list for PBXNativeTarget "PassGuardTests" */ = {
+		45ACA1BB2AA71EA20081CBD3 /* Build configuration list for PBXNativeTarget "PassGuardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4566A0922A7E6838001EB39C /* Debug */,
-				4566A0932A7E6838001EB39C /* Release */,
+				45ACA1BC2AA71EA20081CBD3 /* Debug */,
+				45ACA1BD2AA71EA20081CBD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4566A0712A7E6837001EB39C /* Project object */;
+	rootObject = 45ACA19B2AA71EA20081CBD3 /* Project object */;
 }
