@@ -2,7 +2,9 @@
 
 # PassGuard
 
-The `PassGuard` provides visual feedback to help users create stronger passwords by identifying common mistakes. We developed our own algorithms to gauge password strength since there is no official rating system available.
+The `PassGuard` provides visual feedback to help users create stronger passwords by identifying common mistakes. I developed our own 16 algorithms and a scoring mechanism to gauge password strength since there is no official rating system available.
+
+`The `PassGuard` runs on the user device as a framework and does not store or send user password over the network.`
 
 # Requirements
 
@@ -83,10 +85,10 @@ let passGuard = PassGuard(password: password)
 
 In this version, PassGuard provides three options for building the UI responsible for displaying password details to the end user.
 
-1. Strength Description : "Too Short", "Very Weak", "Weak", "Medium", "Strong", "Very Strong". The six-level return is determined by the password score and strength calculated by PassGuard. You can customize these six strings as I will explain below.
-2. Strength Color : The framework returns six colors in a spectrum ranging from red to green.
-3. The framework returns a score calculated using the 16 algorithms provided by PassGuard.
-
+1. Strength Description: "Too Short", "Very Weak", "Weak", "Medium", "Strong", "Very Strong". The six-level return is determined by the password score and strength calculated by PassGuard. You can customize these six strings as I will explain below.
+2. Strength Color: The framework returns six colors in a spectrum ranging from red to green.
+3. Strenght Score: The framework returns a score calculated using the 16 algorithms provided by PassGuard.
+4. Strenght Type: The framework returns an enum to identify the actual level of password strength. The enum cases are tooShort, veryWeak, weak, medium, strong, veryStrong which you can use to get the current state of PassGuard.
 
 ```swift
 let passGuard = PassGuard(password: password)
