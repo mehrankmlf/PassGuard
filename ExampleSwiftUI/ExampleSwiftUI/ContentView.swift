@@ -14,9 +14,9 @@ struct ContentView: View {
     @State var username: String = ""
     @State var password: String = ""
     
-    @State var strenghtState: String = ""
-    @State var strenghtColor: Color = .clear
-    @State var strenghtScore: Float = 0.0
+    @State var strengthState: String = ""
+    @State var strengthColor: Color = .clear
+    @State var strengthScore: Float = 0.0
     
     var body: some View {
         ZStack {
@@ -33,45 +33,19 @@ struct ContentView: View {
                 Text("Log in to your existant account ")
                     .font(.custom("Avenier", size: 17))
                 VStack(spacing: 20) {
-                    TextField("", text: $username)
-                        .textFieldStyle(RoundTextFieldStyle())
-                        .placeholder(when: username.isEmpty) {
-                            Text("username").foregroundColor(.gray)
-                                .padding(.leading, 15)
-                        }
-                    TextField("", text: $password)
-                        .textFieldStyle(RoundTextFieldStyle())
-                        .placeholder(when: password.isEmpty) {
-                            Text("password").foregroundColor(.gray)
-                                .padding(.leading, 15)
-                        }
+                    RoundedTextField(text: $username, placeholder: "Username")
+                    RoundedTextField(text: $password, placeholder: "Password")
                         .onChange(of: password) { text in
                             let passGuard = PassGuard(password: text)
-                            self.strenghtState = passGuard.strengthDescription
-                            self.strenghtColor = Color(passGuard.strengthColor)
-                            self.strenghtScore = Float(passGuard.strengthScore)
+                            self.strengthState = passGuard.strengthDescription
+                            self.strengthColor = Color(passGuard.strengthColor)
+                            self.strengthScore = Float(passGuard.strengthScore)
                         }
-                    Rectangle()
-                        .overlay {
-                            Text(strenghtState)
-                                .font(.custom("Avenier", size: 17))
-                                .foregroundColor(.black)
-                        }
-                        .foregroundColor(strenghtColor)
-                        .frame(height: 50, alignment: .center)
-                        .cornerRadius(10)
-                    ProgressView("", value: strenghtScore, total: 100)
+                    StrengthIndicator(strengthState: $strengthState, strengthColor: $strengthColor)
+                    ProgressView("", value: strengthScore, total: 100)
                         .frame(height: 50.0)
                         .tint(.gray)
-                    Button(action: { }, label: {
-                        Text("Login")
-                            .font(.custom("Avenier", size: 17))
-                            .foregroundColor(.white)
-                            .background(Color("ButtonColor"))
-                            .cornerRadius(8)
-                            .frame(width: 100, height: 50.0)
-                    })
-                    .buttonStyle(CustomButtonStyle(color: Color("ButtonColor")))
+                    CustomButton(label: "Login")
                 }
                 .padding([.leading, .trailing], 30)
                 
@@ -79,6 +53,53 @@ struct ContentView: View {
             }
             .foregroundColor(.black)
         }
+    }
+}
+
+struct RoundedTextField: View {
+    @Binding var text: String
+    var placeholder: String
+    
+    var body: some View {
+        TextField("", text: $text)
+            .textFieldStyle(RoundTextFieldStyle())
+            .placeholder(when: text.isEmpty) {
+                Text(placeholder).foregroundColor(.gray)
+                    .padding(.leading, 15)
+            }
+    }
+}
+
+struct StrengthIndicator: View {
+    @Binding var strengthState: String
+    @Binding var strengthColor: Color
+    
+    var body: some View {
+        Rectangle()
+            .overlay {
+                Text(strengthState)
+                    .font(.custom("Avenir", size: 17))
+                    .foregroundColor(.black)
+            }
+            .foregroundColor(strengthColor)
+            .frame(height: 50, alignment: .center)
+            .cornerRadius(10)
+    }
+}
+
+struct CustomButton: View {
+    var label: String
+    
+    var body: some View {
+        Button(action: {}) {
+            Text(label)
+                .font(.custom("Avenir", size: 17))
+                .foregroundColor(.white)
+                .background(Color("ButtonColor"))
+                .cornerRadius(8)
+                .frame(width: 100, height: 50.0)
+        }
+        .buttonStyle(CustomButtonStyle(color: Color("ButtonColor")))
     }
 }
 
