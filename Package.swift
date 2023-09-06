@@ -12,15 +12,20 @@ import PackageDescription
 
 let package = Package(
     name: "PassGuard",
-    platforms: [.iOS(.v13)],
+    platforms: [
+        .iOS(.v13),
+    ],
     products: [
-        .library(name: "PassGuard", targets: ["PassGuard"])
+        .library(
+            name: "PassGuard",
+            targets: ["PassGuard"]),
     ],
     targets: [
         .target(
             name: "PassGuard",
-            path: "PassGuard/PassGuard"
-        )
-    ],
-    swiftLanguageVersions: [.v5]
+            dependencies: [],
+            path: "./PassGuard",
+            sources: ["PassGuard"]
+        ),
+    ]
 )
