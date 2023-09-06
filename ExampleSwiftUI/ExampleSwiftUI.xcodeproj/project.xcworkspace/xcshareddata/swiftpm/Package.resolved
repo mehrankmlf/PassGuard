@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "progresshud",
+      "identity" : "passguard",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/relatedcode/ProgressHUD.git",
+      "location" : "https://github.com/mehrankmlf/PassGuard/",
       "state" : {
-        "revision" : "01b56b31d61512d900b58cb7ac1479509bd7170f",
-        "version" : "13.7.2"
+        "revision" : "5aa0b039853ed77e2436c315aadeaee3cabda26b",
+        "version" : "1.0.8"
       }
     }
   ],

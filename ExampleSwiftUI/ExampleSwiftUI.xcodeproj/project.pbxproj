@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0241EB182AA900FD0080FF41 /* PassGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 0241EB172AA900FD0080FF41 /* PassGuard */; };
 		45078E4C2AA46B460097318D /* RoundTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45078E4B2AA46B460097318D /* RoundTextFieldStyle.swift */; };
 		45078E4E2AA46B680097318D /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45078E4D2AA46B680097318D /* CustomButtonStyle.swift */; };
 		45078E522AA46DF10097318D /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45078E512AA46DF10097318D /* View + Extension.swift */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0241EB182AA900FD0080FF41 /* PassGuard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,9 @@
 			dependencies = (
 			);
 			name = ExampleSwiftUI;
+			packageProductDependencies = (
+				0241EB172AA900FD0080FF41 /* PassGuard */,
+			);
 			productName = ExampleSwiftUI;
 			productReference = 452CA7F32AA31C0100CB82C7 /* ExampleSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +140,7 @@
 			);
 			mainGroup = 452CA7EA2AA31C0100CB82C7;
 			packageReferences = (
+				0241EB162AA900FD0080FF41 /* XCRemoteSwiftPackageReference "PassGuard" */,
 			);
 			productRefGroup = 452CA7F42AA31C0100CB82C7 /* Products */;
 			projectDirPath = "";
@@ -381,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0241EB162AA900FD0080FF41 /* XCRemoteSwiftPackageReference "PassGuard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mehrankmlf/PassGuard/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0241EB172AA900FD0080FF41 /* PassGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0241EB162AA900FD0080FF41 /* XCRemoteSwiftPackageReference "PassGuard" */;
+			productName = PassGuard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 452CA7EB2AA31C0100CB82C7 /* Project object */;
 }
