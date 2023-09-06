@@ -14,6 +14,10 @@ let package = Package(
     name: "PassGuard",
     defaultLocalization: "en",
     platforms: [.iOS(.v13)],
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+         .package(url: "https://github.com/mehrankmlf/PassGuard", from: "1.0.7"),
+    ],
 
     products: [.library(name: "PassGuard", targets: ["PassGuard"])],
     targets: [

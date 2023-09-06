@@ -14,8 +14,6 @@
 		452CA7F92AA31C0100CB82C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CA7F82AA31C0100CB82C7 /* ContentView.swift */; };
 		452CA7FB2AA31C0300CB82C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452CA7FA2AA31C0300CB82C7 /* Assets.xcassets */; };
 		452CA7FE2AA31C0300CB82C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452CA7FD2AA31C0300CB82C7 /* Preview Assets.xcassets */; };
-		455452F22AA7140E00D0510E /* PassGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455452EC2AA713A700D0510E /* PassGuard.framework */; };
-		455452F32AA7140E00D0510E /* PassGuard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 455452EC2AA713A700D0510E /* PassGuard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				455452F32AA7140E00D0510E /* PassGuard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +38,6 @@
 		452CA7F82AA31C0100CB82C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		452CA7FA2AA31C0300CB82C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		452CA7FD2AA31C0300CB82C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		455452EC2AA713A700D0510E /* PassGuard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassGuard.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455452F22AA7140E00D0510E /* PassGuard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +75,6 @@
 				45078E4B2AA46B460097318D /* RoundTextFieldStyle.swift */,
 				45078E4D2AA46B680097318D /* CustomButtonStyle.swift */,
 				45078E512AA46DF10097318D /* View + Extension.swift */,
-				455452EC2AA713A700D0510E /* PassGuard.framework */,
 				452CA7FA2AA31C0300CB82C7 /* Assets.xcassets */,
 				452CA7FC2AA31C0300CB82C7 /* Preview Content */,
 			);
@@ -140,6 +134,8 @@
 				Base,
 			);
 			mainGroup = 452CA7EA2AA31C0100CB82C7;
+			packageReferences = (
+			);
 			productRefGroup = 452CA7F42AA31C0100CB82C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,6 +314,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.ExampleSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,6 +350,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ir.gravityapp.ExampleSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
