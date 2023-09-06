@@ -2,15 +2,15 @@ PODS:
   - PassGuard (1.0.7)
 
 DEPENDENCIES:
-  - PassGuard (from `../`)
+  - PassGuard
 
-EXTERNAL SOURCES:
-  PassGuard:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - PassGuard
 
 SPEC CHECKSUMS:
-  PassGuard: 36aa6cd81fee380842117ad51ad23aa5406b8018
+  PassGuard: fda163791bad0892131baaed315bcdb5e68cbcc2
 
-PODFILE CHECKSUM: 3fe06140a55cfbdceffe25372167f9e6528c0c87
+PODFILE CHECKSUM: d7ba96c69e36fbf4de893baa99d752fc93ff55f7
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.12.1
