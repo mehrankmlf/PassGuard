@@ -4,7 +4,7 @@
 
 The `PassGuard` provides visual feedback to help users create stronger passwords by identifying common mistakes. We developed our own algorithms to gauge password strength since there is no official rating system available.
 
-#Requirements
+# Requirements
 
 `PassGuard` works on iOS 13.0+. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
@@ -32,7 +32,7 @@ target 'MyApp' do
 end
 ```
 
-###Swift Package Manager
+### Swift Package Manager
 
 You can use The Swift Package Manager to install PassGuard by adding the proper description to your Package.swift file:
 
@@ -50,7 +50,7 @@ let package = Package(
 
 Then run swift build whenever you get prepared.
 
-##Usage
+## Usage
 
 (see sample Xcode project in /Example)
 
@@ -64,11 +64,11 @@ import PassGuard
 We have a Combine text publisher that allows us to stream user input from the UITextField, and there are additional solutions to capture user input efficiently when using UIKit. PassGuard offers this straightforward approach.
 
 ```swift
-        txtPassword.passGuardTextPublisher
-            .sink { [weak self] password in
-				// password
-            }
-            .store(in: &cancellables)
+txtPassword.passGuardTextPublisher
+      .sink { [weak self] password in
+		  // password
+           }
+       .store(in: &cancellables)
 ```
 
 #### Init PassGuard
