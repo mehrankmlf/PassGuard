@@ -24,7 +24,8 @@ let package = Package(
         .target(
             name: "PassGuard",
             dependencies: [],
-            path: "./PassGuard/PassGuard"
+            path: "./PassGuard",
+            sources: ["PassGuard"]
         ),
     ]
 )
