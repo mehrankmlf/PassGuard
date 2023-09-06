@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -123,8 +122,8 @@
                     </view>
                     <connections>
                         <outlet property="btnLogin" destination="REf-WW-SBg" id="BOv-gF-6BB"/>
-                        <outlet property="lblState" destination="Zqt-9b-4po" id="IOA-bO-hCC"/>
-                        <outlet property="progressView" destination="Jt9-tk-bRi" id="ptS-iE-sci"/>
+                        <outlet property="lblStrenght" destination="Zqt-9b-4po" id="IOA-bO-hCC"/>
+                        <outlet property="strenghtProgressView" destination="Jt9-tk-bRi" id="ptS-iE-sci"/>
                         <outlet property="txtPassword" destination="8e6-c2-vEF" id="Y1z-ay-i8v"/>
                         <outlet property="txtUsername" destination="Wva-RS-rba" id="rA4-hN-wR1"/>
                     </connections>
@@ -133,26 +132,8 @@
             </objects>
             <point key="canvasLocation" x="-651.14503816793888" y="-2.1126760563380285"/>
         </scene>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
-        </scene>
     </scenes>
     <resources>
         <image name="avatar" width="512" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

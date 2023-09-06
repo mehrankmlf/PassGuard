@@ -13,7 +13,6 @@
 		45111CEB2A51834E00D3CF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45111CE92A51834E00D3CF73 /* Main.storyboard */; };
 		45111CED2A51834F00D3CF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45111CEC2A51834F00D3CF73 /* Assets.xcassets */; };
 		45111CF02A51834F00D3CF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45111CEE2A51834F00D3CF73 /* LaunchScreen.storyboard */; };
-		45111CF82A5185CD00D3CF73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45111CF72A5185CD00D3CF73 /* MainViewController.swift */; };
 		45D204B82A5402E80048C613 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D204B72A5402E80048C613 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		45111CEC2A51834F00D3CF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45111CEF2A51834F00D3CF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45111CF12A51834F00D3CF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45111CF72A5185CD00D3CF73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		45D204B72A5402E80048C613 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B087D1E46A67D9EAD92B57 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +79,6 @@
 				45111CE32A51834E00D3CF73 /* AppDelegate.swift */,
 				45111CE52A51834E00D3CF73 /* SceneDelegate.swift */,
 				45D204B72A5402E80048C613 /* LoginViewController.swift */,
-				45111CF72A5185CD00D3CF73 /* MainViewController.swift */,
 				45111CE92A51834E00D3CF73 /* Main.storyboard */,
 				45111CEC2A51834F00D3CF73 /* Assets.xcassets */,
 				45111CEE2A51834F00D3CF73 /* LaunchScreen.storyboard */,
@@ -96,7 +93,6 @@
 				3861096954D8B4A9C4CB0C5F /* Pods-Example.debug.xcconfig */,
 				96B087D1E46A67D9EAD92B57 /* Pods-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +116,7 @@
 				45111CDD2A51834E00D3CF73 /* Frameworks */,
 				45111CDE2A51834E00D3CF73 /* Resources */,
 				4566A0CD2A7E6BDA001EB39C /* Embed Frameworks */,
+				FF270B427A92330DEF6CD8FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +196,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FF270B427A92330DEF6CD8FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -207,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D204B82A5402E80048C613 /* LoginViewController.swift in Sources */,
-				45111CF82A5185CD00D3CF73 /* MainViewController.swift in Sources */,
 				45111CE42A51834E00D3CF73 /* AppDelegate.swift in Sources */,
 				45111CE62A51834E00D3CF73 /* SceneDelegate.swift in Sources */,
 			);

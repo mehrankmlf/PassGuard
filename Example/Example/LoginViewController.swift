@@ -11,66 +11,88 @@ import PassGuard
 
 final class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    // MARK: - Constants
     enum Constant {
         static let cornerRadius: CGFloat = 10
         static let borderWidth: CGFloat = 1
         static let borderColor: UIColor = .gray
-        
     }
     
+    // MARK: - Outlets
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var lblState: UILabel!
-    @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var lblStrenght: UILabel!
+    @IBOutlet weak var strenghtProgressView: UIProgressView!
     
-    private var subscriber = Set<AnyCancellable>()
+    // MARK: - Properties
+    private var cancellables = Set<AnyCancellable>()
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.txtPassword.delegate = self
-        self.setupView()
-        self.txtPassword.passGuardTextPublisher
-            .sink { password in
-//                let customDescriptions = ["Way Too Short",
-//                                          "Extremely Weak",
-//                                          "Not So Strong",
-//                                          "Fairly Strong",
-//                                          "Super Strong", "Incredibly Strong"]
-                let passGuard = PassGuard(password: password)
-//                                          customDescription: customDescriptions)
-                self.lblState.text = passGuard.strengthDescription
-                self.lblState.backgroundColor = passGuard.strengthColor
-                self.progressView.progress = Float(passGuard.strengthScore) / 100
-            }.store(in: &subscriber)
+        self.setupUI()
+        self.setupPasswordStrengthSubscriber()
     }
-        
+    // MARK: - Actions
     @IBAction func btnLogin_Clicked(_ sender: Any) {
         // Implement login flow
     }
-}
-
-extension LoginViewController {
-    private func setupView() {
-        self.lblState.layer.cornerRadius = 5
-        self.lblState.layer.masksToBounds = true
-        self.progressView.progress = 0.0
-        self.txtUsername.attributedPlaceholder = NSAttributedString(string: "username",
-                                                                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
-        self.txtPassword.attributedPlaceholder = NSAttributedString(string: "password",
-                                                                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
-        
-        self.btnLogin.layer.cornerRadius = Constant.cornerRadius
-        self.btnLogin.layer.borderColor = Constant.borderColor.cgColor
-        self.btnLogin.layer.borderWidth = Constant.borderWidth
-        
-        self.txtUsername.layer.cornerRadius = Constant.cornerRadius
-        self.txtUsername.layer.borderColor = Constant.borderColor.cgColor
-        self.txtUsername.layer.borderWidth = Constant.borderWidth
-        
-        self.txtPassword.layer.cornerRadius = Constant.cornerRadius
-        self.txtPassword.layer.borderColor = Constant.borderColor.cgColor
-        self.txtPassword.layer.borderWidth = Constant.borderWidth
+    
+    // MARK: - Private Methods
+    private func setupUI() {
+        setupLabel(lblStrenght)
+        setupTextField(txtUsername, placeholder: "Username")
+        setupTextField(txtPassword, placeholder: "Password")
+        setupButton(btnLogin)
+    }
+    
+    private func setupLabel(_ label: UILabel) {
+        label.layer.cornerRadius = 5
+        label.layer.masksToBounds = true
+    }
+    
+    private func setupTextField(_ textField: UITextField, placeholder: String) {
+        textField.layer.cornerRadius = Constant.cornerRadius
+        textField.layer.borderColor = Constant.borderColor.cgColor
+        textField.layer.borderWidth = Constant.borderWidth
+        textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        textField.delegate = self
+    }
+    
+    private func setupButton(_ button: UIButton) {
+        button.layer.cornerRadius = Constant.cornerRadius
+        button.layer.borderColor = Constant.borderColor.cgColor
+        button.layer.borderWidth = Constant.borderWidth
+    }
+    
+    private func setupPasswordStrengthSubscriber() {
+        txtPassword.passGuardTextPublisher
+            .sink { [weak self] password in
+                let passGuard = PassGuard(password: password)
+                self?.lblStrenght.text = passGuard.strengthDescription
+                self?.lblStrenght.backgroundColor = passGuard.strengthColor
+                self?.strenghtProgressView.progress = Float(passGuard.strengthScore) / 100
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func setupPasswordStrengthWithCustomDescriptionSubscriber() {
+        let customDescriptions = ["Way Too Short",
+                                  "Extremely Weak",
+                                  "Not So Strong",
+                                  "Fairly Strong",
+                                  "Super Strong", "Incredibly Strong"]
+        txtPassword.passGuardTextPublisher
+            .sink { [weak self] password in
+                let passGuard = PassGuard(password: password,
+                                          customDescription: customDescriptions)
+                self?.lblStrenght.text = passGuard.strengthDescription
+                self?.lblStrenght.backgroundColor = passGuard.strengthColor
+                self?.strenghtProgressView.progress = Float(passGuard.strengthScore) / 100
+            }
+            .store(in: &cancellables)
     }
 }
 
