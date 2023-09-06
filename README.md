@@ -52,6 +52,12 @@ let package = Package(
 
 Then run swift build whenever you get prepared.
 
+## Sample
+
+You can create your custom UI based on the project.
+
+![Simulator Screen Recording - iPhone SE (3rd generation) - 2023-09-07 at 00 09 20](https://github.com/mehrankmlf/PassGuard/assets/24524023/404e42e8-338f-4b8c-addc-2ad7be0bea18)
+
 ## Usage
 
 (see sample Xcode project in /Example)
