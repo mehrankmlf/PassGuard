@@ -13,19 +13,13 @@ import PackageDescription
 let package = Package(
     name: "PassGuard",
     platforms: [.iOS(.v13)],
-
-    products: [.library(name: "PassGuard", 
-		targets: ["PassGuard"])],
-
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-       .package(name: "PassGuard", url: "https://github.com/mehrankmlf/PassGuard.git", .upToNextMajor(from: "1.0.7")),
+    products: [
+        .library(name: "PassGuard", targets: ["PassGuard"])
     ],
-
     targets: [
         .target(
             name: "PassGuard",
-            path: "PassGuard/PassGuard",
+            path: "PassGuard/PassGuard"
         )
     ],
     swiftLanguageVersions: [.v5]
