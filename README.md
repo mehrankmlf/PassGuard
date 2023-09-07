@@ -4,7 +4,7 @@
 
 The `PassGuard` provides visual feedback to help users create stronger passwords by identifying common mistakes. I developed our own 16 algorithms and a scoring mechanism to gauge password strength since there is no official rating system available.
 
-`The `PassGuard` runs on the user device as a framework and does not store or send user password over the network.`
+`The PassGuard runs on the user device as a framework and does not store or send user password over the network.`
 
 # Requirements
 
@@ -103,6 +103,10 @@ self?.lblStrenght.backgroundColor = passGuard.strengthColor
 self?.strenghtProgressView.progress = Float(passGuard.strengthScore) / 100
 ```
 
+I have explained about PassGuard in the form of a post on Medium.
+
+https://medium.com/@mehran.kmlf/boost-your-password-security-with-passguard-framework-on-ios-7faa98cc7daa
+
 ## Customize
 
 PassGuard allows you to customize the description returned by the framework based on the password score. You simply need to create a string array with six indexes and assign it to the PassGuard instance.
@@ -123,6 +127,18 @@ let customDescriptions = ["Way Too Short",
             }
             .store(in: &cancellables)
 ```
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/YourFeatureName`)
+3. Commit your Changes (`git commit -m 'Add some YourFeatureName'`)
+4. Push to the Branch (`git push origin feature/YourFeatureName`)
+5. Open a Pull Request
 
 
 ## LICENSE
