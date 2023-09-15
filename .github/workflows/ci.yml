@@ -1,22 +1,24 @@
-
 name: Tests PassGuard using CI process
+
 on:
-    push:
+  push:
     branches:
-        - master
+      - master
     paths:
-        - ".github/workflows/**"
-        - "Package.swift"
-        - "PassGuard/**"
-    pull_request:
+      - ".github/workflows/**"
+      - "Package.swift"
+      - "PassGuard/**"
+  pull_request:
     branches:
-        - master
+      - master
+
 jobs:
-    build-and-test:
+  build-and-test:
     runs-on: macos-13
     steps:
-        - uses: actions/checkout@v2
-        - name: Select Xcode
-        run: sudo Xcode-select -switch /Applications/Xcode_14.3.app
-        - name: Build & Test
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_14.3.app
+      - name: Build & Test
         run: xcodebuild test -scheme PassGuard -project PassGuard.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 14'
