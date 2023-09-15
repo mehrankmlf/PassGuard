@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "PassGuard/PassGuard.xcodeproj"
   pull_request:
     branches:
       - master
@@ -19,4 +17,4 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_14.3.app
       - name: Build & Test
-        run: xcodebuild test -scheme PassGuard -project PassGuard.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 14'
+        run: xcodebuild test -scheme PassGuard -project PassGuard/PassGuard.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 14'
