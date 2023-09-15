@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "PassGuard/**"
+      - "PassGuard/PassGuard.xcodeproj"
   pull_request:
     branches:
       - master
