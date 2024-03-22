@@ -2,7 +2,7 @@
 
 # PassGuard
 
-The `PassGuard` provides visual feedback to help users create stronger passwords by identifying common mistakes. I developed our own 16 algorithms and a scoring mechanism to gauge password strength since there is no official rating system available.
+The `PassGuard` provides visual feedback to help users create stronger passwords by identifying common mistakes. The PassGuard using 16 algorithms and a scoring mechanism to gauge password strength since there is no official rating system available.
 
 `The PassGuard runs on the user device as a framework and does not store or send user password over the network.`
 
